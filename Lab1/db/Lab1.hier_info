@@ -1,0 +1,44 @@
+|Lab1
+a => Selector1.IN15
+a => Selector2.IN15
+a => Selector3.IN15
+a => Selector4.IN15
+a => Selector5.IN15
+a => Selector6.IN15
+a => Selector7.IN15
+a => Selector8.IN15
+a => Selector9.IN15
+a => Selector10.IN15
+a => Selector15.IN15
+a => Selector14.IN15
+a => Selector13.IN15
+a => Selector12.IN15
+a => Selector11.IN15
+a => Selector0.IN15
+a => Selector14.IN14
+a => Selector0.IN14
+a => Selector1.IN14
+a => Selector2.IN14
+a => Selector3.IN14
+a => Selector4.IN14
+a => Selector5.IN14
+a => Selector6.IN14
+a => Selector7.IN14
+a => Selector8.IN14
+a => Selector9.IN14
+a => Selector10.IN14
+a => Selector11.IN14
+a => Selector12.IN14
+a => Selector13.IN14
+a => Selector15.IN14
+clock => current_state~1.DATAIN
+reset => current_state~3.DATAIN
+l0 <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+l1 <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+l2 <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+l3 <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+l4 <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+l5 <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+l6 <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
