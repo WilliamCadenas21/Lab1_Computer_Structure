@@ -4,31 +4,31 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "l0",
+					"name" : "display_right[0]",
 					"strict" : false
 				},
 				{
-					"name" : "l1",
+					"name" : "display_right[1]",
 					"strict" : false
 				},
 				{
-					"name" : "l2",
+					"name" : "display_right[2]",
 					"strict" : false
 				},
 				{
-					"name" : "l3",
+					"name" : "display_right[3]",
 					"strict" : false
 				},
 				{
-					"name" : "l4",
+					"name" : "display_right[4]",
 					"strict" : false
 				},
 				{
-					"name" : "l5",
+					"name" : "display_right[5]",
 					"strict" : false
 				},
 				{
-					"name" : "l6",
+					"name" : "display_right[6]",
 					"strict" : false
 				},
 				{
@@ -36,11 +36,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "reset",
+					"name" : "enable",
 					"strict" : false
 				},
 				{
-					"name" : "a",
+					"name" : "forward",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
 					"strict" : false
 				}
 			]
