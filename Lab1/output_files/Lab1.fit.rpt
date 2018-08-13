@@ -1,5 +1,5 @@
 Fitter report for Lab1
-Mon Aug 13 13:39:44 2018
+Mon Aug 13 15:14:25 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -65,7 +65,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Mon Aug 13 13:39:44 2018       ;
+; Fitter Status                      ; Successful - Mon Aug 13 15:14:25 2018       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Lab1                                        ;
 ; Top-level Entity Name              ; lab1                                        ;
@@ -1610,7 +1610,7 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node clock~input (placed in PIN Y2 (CLK2, DIFFCLK_1p)) File: C:/Users/WILL/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 17
+Info (176353): Automatically promoted node clock~input (placed in PIN Y2 (CLK2, DIFFCLK_1p)) File: C:/Users/WILL/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 14
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -1636,9 +1636,9 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file C:/Users/WILL/Desktop/Lab1_Computer_Structure/Lab1/output_files/Lab1.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 5471 megabytes
-    Info: Processing ended: Mon Aug 13 13:39:45 2018
-    Info: Elapsed time: 00:00:24
+    Info: Peak virtual memory: 5475 megabytes
+    Info: Processing ended: Mon Aug 13 15:14:25 2018
+    Info: Elapsed time: 00:00:25
     Info: Total CPU time (on all processors): 00:00:32
 
 

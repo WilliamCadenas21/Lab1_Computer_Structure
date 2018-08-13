@@ -1,10 +1,7 @@
-
-
 library ieee ;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_unsigned.all;
-
 
 -----------------------------------------------------
 
@@ -137,8 +134,7 @@ process(number) begin
 				when "1110" => display_left <= "0110000";--e	
 				when others => display_left <= "0111000";--f	--"1111"
 			end case;			
-			
-			 
+	 
 		--  end function choose_output;
 		-------------------------------------------------  
 
