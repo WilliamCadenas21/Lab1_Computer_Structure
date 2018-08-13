@@ -4,23 +4,7 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "display_right[0]",
-					"strict" : false
-				},
-				{
-					"name" : "display_right[1]",
-					"strict" : false
-				},
-				{
-					"name" : "display_right[2]",
-					"strict" : false
-				},
-				{
-					"name" : "display_right[3]",
-					"strict" : false
-				},
-				{
-					"name" : "display_right[4]",
+					"name" : "display_right[6]",
 					"strict" : false
 				},
 				{
@@ -28,19 +12,55 @@
 					"strict" : false
 				},
 				{
-					"name" : "display_right[6]",
+					"name" : "display_right[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display_right[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display_right[2]",
+					"strict" : false
+				},
+				{
+					"name" : "display_right[1]",
+					"strict" : false
+				},
+				{
+					"name" : "display_right[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display_left[6]",
+					"strict" : false
+				},
+				{
+					"name" : "display_left[5]",
+					"strict" : false
+				},
+				{
+					"name" : "display_left[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display_left[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display_left[2]",
+					"strict" : false
+				},
+				{
+					"name" : "display_left[1]",
+					"strict" : false
+				},
+				{
+					"name" : "display_left[0]",
 					"strict" : false
 				},
 				{
 					"name" : "clock",
-					"strict" : false
-				},
-				{
-					"name" : "enable",
-					"strict" : false
-				},
-				{
-					"name" : "forward",
 					"strict" : false
 				},
 				{

@@ -50,14 +50,22 @@ set_global_assignment -name VHDL_FILE Lab1.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_location_assignment PIN_Y23 -to a
-set_location_assignment PIN_AB28 -to clock
-set_location_assignment PIN_AD17 -to l0
-set_location_assignment PIN_AE17 -to l1
-set_location_assignment PIN_AG17 -to l2
-set_location_assignment PIN_AH17 -to l3
-set_location_assignment PIN_AF17 -to l4
-set_location_assignment PIN_AG18 -to l5
-set_location_assignment PIN_AA14 -to l6
+set_location_assignment PIN_Y2 -to clock
 set_location_assignment PIN_AA22 -to reset
+set_location_assignment PIN_Y24 -to forward
+set_location_assignment PIN_Y23 -to enable
+set_location_assignment PIN_AC17 -to display_right[6]
+set_location_assignment PIN_AA15 -to display_right[5]
+set_location_assignment PIN_AB15 -to display_right[4]
+set_location_assignment PIN_AB17 -to display_right[3]
+set_location_assignment PIN_AA16 -to display_right[2]
+set_location_assignment PIN_AB16 -to display_right[1]
+set_location_assignment PIN_AA17 -to display_right[0]
+set_location_assignment PIN_AA14 -to display_left[6]
+set_location_assignment PIN_AG18 -to display_left[5]
+set_location_assignment PIN_AF17 -to display_left[4]
+set_location_assignment PIN_AH17 -to display_left[3]
+set_location_assignment PIN_AG17 -to display_left[2]
+set_location_assignment PIN_AE17 -to display_left[1]
+set_location_assignment PIN_AD17 -to display_left[0]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
