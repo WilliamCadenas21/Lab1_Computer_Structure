@@ -60,15 +60,47 @@
 					"strict" : false
 				},
 				{
-					"name" : "forward",
+					"name" : "display_velocity1[6]",
 					"strict" : false
 				},
 				{
-					"name" : "clock",
+					"name" : "display_velocity1[4]",
 					"strict" : false
 				},
 				{
-					"name" : "enable",
+					"name" : "display_velocity1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "display_velocity2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "display_velocity2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "display_velocity2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "display_increment[6]",
+					"strict" : false
+				},
+				{
+					"name" : "display_increment[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display_increment[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display_increment[2]",
+					"strict" : false
+				},
+				{
+					"name" : "display_increment[0]",
 					"strict" : false
 				},
 				{
@@ -76,15 +108,27 @@
 					"strict" : false
 				},
 				{
-					"name" : "reset",
-					"strict" : false
-				},
-				{
 					"name" : "select1",
 					"strict" : false
 				},
 				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
 					"name" : "select2",
+					"strict" : false
+				},
+				{
+					"name" : "forward",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "enable",
 					"strict" : false
 				}
 			]

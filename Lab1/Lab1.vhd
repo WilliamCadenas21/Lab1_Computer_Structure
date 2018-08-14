@@ -19,8 +19,15 @@ port(
 	
 	
 	--outputs
-	display_right : out  STD_LOGIC_VECTOR (0 to 6);
-	display_left : out  STD_LOGIC_VECTOR (0 to 6)
+	display_right : out  STD_LOGIC_VECTOR (0 to 6); -- for the number(unit)
+	display_left : out  STD_LOGIC_VECTOR (0 to 6); -- for the number2(hexena)
+
+	-- display de current velocity
+	display_velocity1 : out  STD_LOGIC_VECTOR (0 to 6); 
+	display_velocity2 : out  STD_LOGIC_VECTOR (0 to 6);
+
+   -- display the current increment
+	display_increment : out  STD_LOGIC_VECTOR (0 to 6)
 );
 end lab1;
 
@@ -37,7 +44,8 @@ architecture FSM of lab1 is
 	signal l1: std_logic_vector(3 downto 0);
 
 begin
-   -- this process verify the number of the count
+
+-- this process verify the number of the count
 process(clock, reset, forward, enable) 
 	
 	begin
@@ -49,21 +57,24 @@ process(clock, reset, forward, enable)
 	elsif (number = "00000000" and forward = '0') then	
 		number<="11111111";
 	elsif(rising_edge(clock))then
-	    count <= count +1;
+	   count <= count +1;
+		 
+		-- selection of the increment and decrement	
+		if select2 = '0' and select1 = '1' then -- 1 in binary: 01
+			increment <= 1;
+		elsif select2 = '1' and select1 = '0' then -- 2 in binary: 10
+			increment <= 2;
+		elsif select2 = '1' and select1 = '1' then -- 3 in binary: 11
+			increment <= 3;
+		end if;
+		
 		if (count >= clocktimer)then
 			count <= 0;
 			if (enable = '1')then
 					
-				-- selccion del incremento o decremento 	
-				if select2 = '0' and select1 = '1' then -- 1 en binario 01
-					increment <= 1;
-				elsif select2 = '1' and select1 = '0' then -- 2 en binario 10
-					increment <= 2;
-				elsif select2 = '1' and select1 = '1' then -- 3 en binario 11
-					increment <= 3;
-				end if;
+
 				
-				-- avance
+				-- advance
 				if (forward = '1') then
 					number <= number + increment;
 				elsif(forward = '0')then
@@ -78,8 +89,9 @@ process(clock, reset, forward, enable)
 end process;						  
 
  process(number) begin
+ 
 		
-			--Divide vector called number
+		--Divide vector called number
 		------------------------------------------------	
 			r1(0) <= number(0);
 			r1(1) <= number(1);
@@ -92,20 +104,7 @@ end process;
 			l1(3) <= number(7);
 		------------------------------------------------
 		
-		--Call fuction
-		------------------------------------------------
-		--display_right <= choose_output(r1);
-		--display_left <= choose_output(l1);
-		------------------------------------------------
-					 
-		--Function
-		------------------------------------------------
-		-- function choose_output(number: in std_logic_vector(7 to 0))
-		--	 return std_logic_vector;
-		-- begin
-		--	 number: std_logic_vector(6 to 0)
-			 
-			 
+
 		case r1 is
 				when "0000" => display_right <= "0000001";--0
 				when "0001" => display_right <= "1001111";--1
@@ -142,14 +141,25 @@ end process;
 				when "1101" => display_left <= "1000010";--d	
 				when "1110" => display_left <= "0110000";--e	
 				when others => display_left <= "0111000";--f	--"1111"
-			end case;			
+			end case;
+
+		case clocktimer is
+			when 25000000 =>  display_velocity2 <= "0010010"; 
+									display_velocity1 <= "0000001"; --2.0hz
+			when others => display_velocity2 <= "0000001";
+								display_velocity1 <= "0100100"; -- 0.5hz
+		end case;
+		
+		case increment is
+			when 1 => display_increment <= "1001111" ; --1
+			when 2 => display_increment <= "0010010" ; --2
+			when others => display_increment <= "0000110" ; --3	
+		end case;
 	 
-		--  end function choose_output;
-		-------------------------------------------------  
 
     end process;
 
-	 process(velocity) begin
+process(velocity) begin
 	 
 		if(velocity = '1')then
 			clocktimer <= 25000000; -- 2hz
@@ -158,8 +168,7 @@ end process;
 			
 		end if;
 		
-	 end process;
+end process;
+
 
 end FSM;
-
------------------------------------------------------
