@@ -14,6 +14,9 @@ port(
 	clock:		in std_logic;
 	reset:		in std_logic;
 	velocity:	in std_logic;
+	select1:    in std_logic;
+	select2:   in std_logic;
+	
 	
 	--outputs
 	display_right : out  STD_LOGIC_VECTOR (0 to 6);
@@ -27,6 +30,7 @@ architecture FSM of lab1 is
 
 	signal clockTimer: integer:= 0; --2hz 
 	signal count: integer := 0;
+	signal increment: integer:= 1; -- future values 1,2,3
 	
 	signal number: std_logic_vector(7 downto 0):= "00000000";
 	signal r1: std_logic_vector(3 downto 0);
@@ -49,11 +53,24 @@ process(clock, reset, forward, enable)
 		if (count >= clocktimer)then
 			count <= 0;
 			if (enable = '1')then
-				 if (forward = '1') then
-					number <= number + 1;
-				 elsif(forward = '0')then
-					number <= number - 1;
-				 end if;		 
+					
+				-- selccion del incremento o decremento 	
+				if select2 = '0' and select1 = '1' then -- 1 en binario 01
+					increment <= 1;
+				elsif select2 = '1' and select1 = '0' then -- 2 en binario 10
+					increment <= 2;
+				elsif select2 = '1' and select1 = '1' then -- 3 en binario 11
+					increment <= 3;
+				end if;
+				
+				-- avance
+				if (forward = '1') then
+					number <= number + increment;
+				elsif(forward = '0')then
+					number <= number - increment;
+				end if;
+		
+				
 			end if;	
 		end if; 
 	end if;

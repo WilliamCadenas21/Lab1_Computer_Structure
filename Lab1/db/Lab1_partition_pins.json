@@ -60,6 +60,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "forward",
+					"strict" : false
+				},
+				{
 					"name" : "clock",
 					"strict" : false
 				},
@@ -72,11 +76,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "forward",
+					"name" : "reset",
 					"strict" : false
 				},
 				{
-					"name" : "reset",
+					"name" : "select1",
+					"strict" : false
+				},
+				{
+					"name" : "select2",
 					"strict" : false
 				}
 			]
