@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab1
-Mon Aug 13 15:13:58 2018
+Tue Aug 14 08:38:15 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -42,16 +42,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Aug 13 15:13:58 2018       ;
+; Analysis & Synthesis Status        ; Successful - Tue Aug 14 08:38:15 2018       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Lab1                                        ;
 ; Top-level Entity Name              ; lab1                                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 78                                          ;
-;     Total combinational functions  ; 78                                          ;
+; Total logic elements               ; 92                                          ;
+;     Total combinational functions  ; 92                                          ;
 ;     Dedicated logic registers      ; 40                                          ;
 ; Total registers                    ; 40                                          ;
-; Total pins                         ; 18                                          ;
+; Total pins                         ; 19                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -176,30 +176,30 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 78          ;
+; Estimated Total logic elements              ; 92          ;
 ;                                             ;             ;
-; Total combinational functions               ; 78          ;
+; Total combinational functions               ; 92          ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 24          ;
-;     -- 3 input functions                    ; 1           ;
-;     -- <=2 input functions                  ; 53          ;
+;     -- 4 input functions                    ; 41          ;
+;     -- 3 input functions                    ; 7           ;
+;     -- <=2 input functions                  ; 44          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 41          ;
-;     -- arithmetic mode                      ; 37          ;
+;     -- normal mode                          ; 54          ;
+;     -- arithmetic mode                      ; 38          ;
 ;                                             ;             ;
 ; Total registers                             ; 40          ;
 ;     -- Dedicated logic registers            ; 40          ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 18          ;
+; I/O pins                                    ; 19          ;
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
 ; Maximum fan-out                             ; 40          ;
-; Total fan-out                               ; 362         ;
-; Average fan-out                             ; 2.35        ;
+; Total fan-out                               ; 465         ;
+; Average fan-out                             ; 2.74        ;
 +---------------------------------------------+-------------+
 
 
@@ -208,7 +208,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |lab1                      ; 78 (78)             ; 40 (40)                   ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |lab1               ; lab1        ; work         ;
+; |lab1                      ; 92 (92)             ; 40 (40)                   ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |lab1               ; lab1        ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -219,11 +219,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 40    ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Clear  ; 32    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 8     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 39    ;
+; Number of registers using Clock Enable       ; 40    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -233,22 +233,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 18                          ;
+; boundary_port         ; 19                          ;
 ; cycloneiii_ff         ; 40                          ;
-;     CLR               ; 1                           ;
-;     ENA               ; 32                          ;
-;     ENA CLR           ; 7                           ;
-; cycloneiii_lcell_comb ; 80                          ;
-;     arith             ; 37                          ;
-;         2 data inputs ; 36                          ;
+;     ENA CLR           ; 8                           ;
+;     ENA SCLR          ; 32                          ;
+; cycloneiii_lcell_comb ; 94                          ;
+;     arith             ; 38                          ;
+;         2 data inputs ; 32                          ;
+;         3 data inputs ; 6                           ;
+;     normal            ; 56                          ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 11                          ;
 ;         3 data inputs ; 1                           ;
-;     normal            ; 43                          ;
-;         1 data inputs ; 4                           ;
-;         2 data inputs ; 15                          ;
-;         4 data inputs ; 24                          ;
+;         4 data inputs ; 41                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.50                        ;
-; Average LUT depth     ; 3.23                        ;
+; Max LUT depth         ; 4.10                        ;
+; Average LUT depth     ; 3.20                        ;
 +-----------------------+-----------------------------+
 
 
@@ -257,7 +257,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -267,31 +267,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Aug 13 15:13:39 2018
+    Info: Processing started: Tue Aug 14 08:37:46 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab1 -c Lab1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file lab1.vhd
-    Info (12022): Found design unit 1: lab1-FSM File: C:/Users/WILL/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 25
+    Info (12022): Found design unit 1: lab1-FSM File: C:/Users/WILL/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 26
     Info (12023): Found entity 1: lab1 File: C:/Users/WILL/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 8
 Info (12127): Elaborating entity "Lab1" for the top level hierarchy
-Warning (10540): VHDL Signal Declaration warning at Lab1.vhd(27): used explicit default value for signal "clockTimer" because signal was never assigned a value File: C:/Users/WILL/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 27
-Warning (10492): VHDL Process Statement warning at Lab1.vhd(100): signal "r1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/WILL/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 100
-Warning (10492): VHDL Process Statement warning at Lab1.vhd(119): signal "l1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/WILL/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 119
+Warning (10492): VHDL Process Statement warning at Lab1.vhd(43): signal "number" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/WILL/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 43
+Warning (10492): VHDL Process Statement warning at Lab1.vhd(45): signal "number" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/WILL/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 45
+Warning (10492): VHDL Process Statement warning at Lab1.vhd(92): signal "r1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/WILL/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 92
+Warning (10492): VHDL Process Statement warning at Lab1.vhd(111): signal "l1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/WILL/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 111
+Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "number[0]" is converted into an equivalent circuit using register "number[0]~_emulated" and latch "number[0]~1" File: C:/Users/WILL/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 41
+    Warning (13310): Register "number[1]" is converted into an equivalent circuit using register "number[1]~_emulated" and latch "number[0]~1" File: C:/Users/WILL/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 41
+    Warning (13310): Register "number[2]" is converted into an equivalent circuit using register "number[2]~_emulated" and latch "number[0]~1" File: C:/Users/WILL/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 41
+    Warning (13310): Register "number[3]" is converted into an equivalent circuit using register "number[3]~_emulated" and latch "number[0]~1" File: C:/Users/WILL/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 41
+    Warning (13310): Register "number[4]" is converted into an equivalent circuit using register "number[4]~_emulated" and latch "number[0]~1" File: C:/Users/WILL/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 41
+    Warning (13310): Register "number[5]" is converted into an equivalent circuit using register "number[5]~_emulated" and latch "number[0]~1" File: C:/Users/WILL/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 41
+    Warning (13310): Register "number[6]" is converted into an equivalent circuit using register "number[6]~_emulated" and latch "number[0]~1" File: C:/Users/WILL/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 41
+    Warning (13310): Register "number[7]" is converted into an equivalent circuit using register "number[7]~_emulated" and latch "number[0]~1" File: C:/Users/WILL/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 41
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "enable" File: C:/Users/WILL/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 12
-    Warning (15610): No output dependent on input pin "forward" File: C:/Users/WILL/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 13
-Info (21057): Implemented 96 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 4 input pins
+Info (21057): Implemented 111 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
     Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 78 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info (21061): Implemented 92 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
     Info: Peak virtual memory: 4811 megabytes
-    Info: Processing ended: Mon Aug 13 15:13:59 2018
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:40
+    Info: Processing ended: Tue Aug 14 08:38:15 2018
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:00:46
 
 

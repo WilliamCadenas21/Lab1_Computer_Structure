@@ -13,6 +13,7 @@ port(
 	forward:		in std_logic;
 	clock:		in std_logic;
 	reset:		in std_logic;
+	velocity:	in std_logic;
 	
 	--outputs
 	display_right : out  STD_LOGIC_VECTOR (0 to 6);
@@ -24,7 +25,7 @@ end lab1;
 
 architecture FSM of lab1 is
 
-	signal clockTimer: integer := 50000000; --5hz 
+	signal clockTimer: integer:= 0; --2hz 
 	signal count: integer := 0;
 	
 	signal number: std_logic_vector(7 downto 0):= "00000000";
@@ -34,41 +35,32 @@ architecture FSM of lab1 is
 begin
    -- this process verify the number of the count
 process(clock, reset, forward, enable) 
-
 	
 	begin
-
+	
 	if (reset='1') then
+		number<="00000000";	
+	elsif (number = "11111111" and forward = '1') then
 		number<="00000000";
-	elsif rising_edge(clock)then
-		count <= count +1;
+	elsif (number = "00000000" and forward = '0') then	
+		number<="11111111";
+	elsif(rising_edge(clock))then
+	    count <= count +1;
 		if (count = clocktimer)then
 			count <= 0;
-			number <= number + 1;
-		end if;	
+			if (enable = '1')then
+				 if (forward = '1') then
+					number <= number + 1;
+				 elsif(forward = '0')then
+					number <= number - 1;
+				 end if;		 
+			end if;	
+		end if; 
 	end if;
-	
---	if (reset='1') then
---		number<="00000000";
---		
---	elsif (number = "11111111" and forward = '1') then
---		number<="00000000";
---	elsif (number = "00000000" and forward = '0') then	
---		number<="11111111";
---	elsif(clock'event and clock='1')then
---	    if (enable = '1')then
---			 if (forward = '1') then
---				number <= number + 1;
---			 elsif(forward = '0')then
---				number <= number - 1;
---			 end if;
---		 end if;
---
---	end if;
 
 end process;						  
 
-process(number) begin
+ process(number) begin
 		
 			--Divide vector called number
 		------------------------------------------------	
@@ -139,6 +131,17 @@ process(number) begin
 		-------------------------------------------------  
 
     end process;
+
+	 process(velocity) begin
+	 
+		if(velocity = '1')then
+			clocktimer <= 25000000; -- 2hz
+		else
+			clocktimer <= 10000000; -- 0,5hz
+			
+		end if;
+		
+	 end process;
 
 end FSM;
 
