@@ -46,7 +46,7 @@ process(clock, reset, forward, enable)
 		number<="11111111";
 	elsif(rising_edge(clock))then
 	    count <= count +1;
-		if (count = clocktimer)then
+		if (count >= clocktimer)then
 			count <= 0;
 			if (enable = '1')then
 				 if (forward = '1') then
@@ -137,7 +137,7 @@ end process;
 		if(velocity = '1')then
 			clocktimer <= 25000000; -- 2hz
 		else
-			clocktimer <= 10000000; -- 0,5hz
+			clocktimer <=100000000; -- 0,5hz
 			
 		end if;
 		
