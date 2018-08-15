@@ -52,10 +52,7 @@ process(clock, reset, forward, enable)
 	
 	if (reset='1') then
 		number<="00000000";	
-	elsif (number = "11111111" and forward = '1') then
-		number<="00000000";
-	elsif (number = "00000000" and forward = '0') then	
-		number<="11111111";
+		
 	elsif(rising_edge(clock))then
 	   count <= count +1;
 		 
@@ -71,8 +68,6 @@ process(clock, reset, forward, enable)
 		if (count >= clocktimer)then
 			count <= 0;
 			if (enable = '1')then
-					
-
 				
 				-- advance
 				if (forward = '1') then
@@ -162,9 +157,9 @@ end process;
 process(velocity) begin
 	 
 		if(velocity = '1')then
-			clocktimer <= 25000000; -- 2hz
+			clocktimer <= 12500000; -- 2hz
 		else
-			clocktimer <=100000000; -- 0,5hz
+			clocktimer <= 50000000; -- 0,5hz
 			
 		end if;
 		

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab1
-Tue Aug 14 11:15:42 2018
+Wed Aug 15 13:54:09 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -44,13 +44,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Aug 14 11:15:42 2018       ;
+; Analysis & Synthesis Status        ; Successful - Wed Aug 15 13:54:08 2018       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Lab1                                        ;
 ; Top-level Entity Name              ; lab1                                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 106                                         ;
-;     Total combinational functions  ; 105                                         ;
+; Total logic elements               ; 82                                          ;
+;     Total combinational functions  ; 81                                          ;
 ;     Dedicated logic registers      ; 42                                          ;
 ; Total registers                    ; 42                                          ;
 ; Total pins                         ; 42                                          ;
@@ -152,25 +152,25 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                             ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                      ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
-; Lab1.vhd                         ; yes             ; User VHDL File  ; C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                  ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------+---------+
+; Lab1.vhd                         ; yes             ; User VHDL File  ; C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -178,16 +178,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 106         ;
+; Estimated Total logic elements              ; 82          ;
 ;                                             ;             ;
-; Total combinational functions               ; 105         ;
+; Total combinational functions               ; 81          ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 44          ;
-;     -- 3 input functions                    ; 12          ;
-;     -- <=2 input functions                  ; 49          ;
+;     -- 4 input functions                    ; 31          ;
+;     -- 3 input functions                    ; 9           ;
+;     -- <=2 input functions                  ; 41          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 66          ;
+;     -- normal mode                          ; 42          ;
 ;     -- arithmetic mode                      ; 39          ;
 ;                                             ;             ;
 ; Total registers                             ; 42          ;
@@ -200,8 +200,8 @@ refer to the applicable agreement for further details.
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
 ; Maximum fan-out                             ; 42          ;
-; Total fan-out                               ; 541         ;
-; Average fan-out                             ; 2.34        ;
+; Total fan-out                               ; 458         ;
+; Average fan-out                             ; 2.21        ;
 +---------------------------------------------+-------------+
 
 
@@ -210,7 +210,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |lab1                      ; 105 (105)           ; 42 (42)                   ; 0           ; 0            ; 0       ; 0         ; 42   ; 0            ; |lab1               ; lab1        ; work         ;
+; |lab1                      ; 81 (81)             ; 42 (42)                   ; 0           ; 0            ; 0       ; 0         ; 42   ; 0            ; |lab1               ; lab1        ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -261,19 +261,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;     ENA               ; 2                           ;
 ;     ENA CLR           ; 8                           ;
 ;     ENA SCLR          ; 32                          ;
-; cycloneiii_lcell_comb ; 111                         ;
+; cycloneiii_lcell_comb ; 86                          ;
 ;     arith             ; 39                          ;
 ;         2 data inputs ; 32                          ;
 ;         3 data inputs ; 7                           ;
-;     normal            ; 72                          ;
+;     normal            ; 47                          ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 6                           ;
-;         2 data inputs ; 15                          ;
-;         3 data inputs ; 5                           ;
-;         4 data inputs ; 44                          ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 7                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 31                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.43                        ;
+; Average LUT depth     ; 3.21                        ;
 +-----------------------+-----------------------------+
 
 
@@ -282,7 +282,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:07     ;
 +----------------+--------------+
 
 
@@ -292,51 +292,46 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Aug 14 11:15:31 2018
+    Info: Processing started: Wed Aug 15 13:53:14 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab1 -c Lab1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file lab1.vhd
-    Info (12022): Found design unit 1: lab1-FSM File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 36
-    Info (12023): Found entity 1: lab1 File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 8
+    Info (12022): Found design unit 1: lab1-FSM File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 36
+    Info (12023): Found entity 1: lab1 File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 8
 Info (12127): Elaborating entity "Lab1" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at Lab1.vhd(55): signal "number" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 55
-Warning (10492): VHDL Process Statement warning at Lab1.vhd(57): signal "number" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 57
-Warning (10492): VHDL Process Statement warning at Lab1.vhd(108): signal "r1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 108
-Warning (10492): VHDL Process Statement warning at Lab1.vhd(127): signal "l1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 127
-Warning (10492): VHDL Process Statement warning at Lab1.vhd(146): signal "clockTimer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 146
-Warning (10492): VHDL Process Statement warning at Lab1.vhd(153): signal "increment" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 153
-Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "number[0]" is converted into an equivalent circuit using register "number[0]~_emulated" and latch "number[0]~1" File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 53
-    Warning (13310): Register "number[1]" is converted into an equivalent circuit using register "number[1]~_emulated" and latch "number[0]~1" File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 53
-    Warning (13310): Register "number[2]" is converted into an equivalent circuit using register "number[2]~_emulated" and latch "number[0]~1" File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 53
-    Warning (13310): Register "number[3]" is converted into an equivalent circuit using register "number[3]~_emulated" and latch "number[0]~1" File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 53
-    Warning (13310): Register "number[4]" is converted into an equivalent circuit using register "number[4]~_emulated" and latch "number[0]~1" File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 53
-    Warning (13310): Register "number[5]" is converted into an equivalent circuit using register "number[5]~_emulated" and latch "number[0]~1" File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 53
-    Warning (13310): Register "number[6]" is converted into an equivalent circuit using register "number[6]~_emulated" and latch "number[0]~1" File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 53
-    Warning (13310): Register "number[7]" is converted into an equivalent circuit using register "number[7]~_emulated" and latch "number[0]~1" File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 53
+Warning (10492): VHDL Process Statement warning at Lab1.vhd(103): signal "r1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 103
+Warning (10492): VHDL Process Statement warning at Lab1.vhd(122): signal "l1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 122
+Warning (10492): VHDL Process Statement warning at Lab1.vhd(141): signal "clockTimer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 141
+Warning (10492): VHDL Process Statement warning at Lab1.vhd(148): signal "increment" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 148
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "display_velocity1[5]" is stuck at GND File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 26
-    Warning (13410): Pin "display_velocity1[3]" is stuck at GND File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 26
-    Warning (13410): Pin "display_velocity1[2]" is stuck at GND File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 26
-    Warning (13410): Pin "display_velocity1[0]" is stuck at GND File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 26
-    Warning (13410): Pin "display_velocity2[4]" is stuck at GND File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 27
-    Warning (13410): Pin "display_velocity2[3]" is stuck at GND File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 27
-    Warning (13410): Pin "display_velocity2[1]" is stuck at GND File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 27
-    Warning (13410): Pin "display_velocity2[0]" is stuck at GND File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 27
-    Warning (13410): Pin "display_increment[5]" is stuck at VCC File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 30
-    Warning (13410): Pin "display_increment[1]" is stuck at GND File: C:/Users/Estudiante/Desktop/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 30
+    Warning (13410): Pin "display_velocity1[6]" is stuck at GND File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 26
+    Warning (13410): Pin "display_velocity1[5]" is stuck at GND File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 26
+    Warning (13410): Pin "display_velocity1[4]" is stuck at VCC File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 26
+    Warning (13410): Pin "display_velocity1[3]" is stuck at GND File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 26
+    Warning (13410): Pin "display_velocity1[2]" is stuck at GND File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 26
+    Warning (13410): Pin "display_velocity1[1]" is stuck at VCC File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 26
+    Warning (13410): Pin "display_velocity1[0]" is stuck at GND File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 26
+    Warning (13410): Pin "display_velocity2[6]" is stuck at VCC File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 27
+    Warning (13410): Pin "display_velocity2[5]" is stuck at GND File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 27
+    Warning (13410): Pin "display_velocity2[4]" is stuck at GND File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 27
+    Warning (13410): Pin "display_velocity2[3]" is stuck at GND File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 27
+    Warning (13410): Pin "display_velocity2[2]" is stuck at GND File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 27
+    Warning (13410): Pin "display_velocity2[1]" is stuck at GND File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 27
+    Warning (13410): Pin "display_velocity2[0]" is stuck at GND File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 27
+    Warning (13410): Pin "display_increment[5]" is stuck at VCC File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 30
+    Warning (13410): Pin "display_increment[1]" is stuck at GND File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 30
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 148 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 124 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 35 output pins
-    Info (21061): Implemented 106 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 27 warnings
-    Info: Peak virtual memory: 655 megabytes
-    Info: Processing ended: Tue Aug 14 11:15:42 2018
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:23
+    Info (21061): Implemented 82 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 22 warnings
+    Info: Peak virtual memory: 4822 megabytes
+    Info: Processing ended: Wed Aug 15 13:54:09 2018
+    Info: Elapsed time: 00:00:55
+    Info: Total CPU time (on all processors): 00:00:43
 
 

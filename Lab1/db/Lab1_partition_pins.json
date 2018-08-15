@@ -60,30 +60,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "display_velocity1[6]",
-					"strict" : false
-				},
-				{
-					"name" : "display_velocity1[4]",
-					"strict" : false
-				},
-				{
-					"name" : "display_velocity1[1]",
-					"strict" : false
-				},
-				{
-					"name" : "display_velocity2[6]",
-					"strict" : false
-				},
-				{
-					"name" : "display_velocity2[5]",
-					"strict" : false
-				},
-				{
-					"name" : "display_velocity2[2]",
-					"strict" : false
-				},
-				{
 					"name" : "display_increment[6]",
 					"strict" : false
 				},
@@ -104,19 +80,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "velocity",
-					"strict" : false
-				},
-				{
-					"name" : "select1",
-					"strict" : false
-				},
-				{
 					"name" : "clock",
-					"strict" : false
-				},
-				{
-					"name" : "select2",
 					"strict" : false
 				},
 				{
@@ -129,6 +93,18 @@
 				},
 				{
 					"name" : "enable",
+					"strict" : false
+				},
+				{
+					"name" : "velocity",
+					"strict" : false
+				},
+				{
+					"name" : "select1",
+					"strict" : false
+				},
+				{
+					"name" : "select2",
 					"strict" : false
 				}
 			]
