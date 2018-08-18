@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Lab1
-Wed Aug 15 13:55:57 2018
+Fri Aug 17 21:17:57 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -121,7 +121,7 @@ refer to the applicable agreement for further details.
 +------------+-----------------+------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
 +------------+-----------------+------------+------+
-; 214.27 MHz ; 214.27 MHz      ; clock      ;      ;
+; 216.87 MHz ; 216.87 MHz      ; clock      ;      ;
 +------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -137,7 +137,7 @@ HTML report is unavailable in plain text report export.
 +-------+--------+--------------------+
 ; Clock ; Slack  ; End Point TNS      ;
 +-------+--------+--------------------+
-; clock ; -3.667 ; -132.350           ;
+; clock ; -3.611 ; -131.044           ;
 +-------+--------+--------------------+
 
 
@@ -146,7 +146,7 @@ HTML report is unavailable in plain text report export.
 +-------+-------+--------------------+
 ; Clock ; Slack ; End Point TNS      ;
 +-------+-------+--------------------+
-; clock ; 0.539 ; 0.000              ;
+; clock ; 0.442 ; 0.000              ;
 +-------+-------+--------------------+
 
 
@@ -176,215 +176,215 @@ No paths to report.
 +--------+-----------+-----------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node ; To Node   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-----------+-----------+--------------+-------------+--------------+------------+------------+
-; -3.667 ; count[26] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.083     ; 4.582      ;
-; -3.667 ; count[26] ; count[15] ; clock        ; clock       ; 1.000        ; -0.083     ; 4.582      ;
-; -3.654 ; count[29] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.083     ; 4.569      ;
-; -3.654 ; count[29] ; count[15] ; clock        ; clock       ; 1.000        ; -0.083     ; 4.569      ;
-; -3.650 ; count[28] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.083     ; 4.565      ;
-; -3.650 ; count[28] ; count[15] ; clock        ; clock       ; 1.000        ; -0.083     ; 4.565      ;
-; -3.580 ; count[10] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.513     ; 4.065      ;
-; -3.580 ; count[10] ; count[15] ; clock        ; clock       ; 1.000        ; -0.513     ; 4.065      ;
-; -3.521 ; count[8]  ; count[7]  ; clock        ; clock       ; 1.000        ; -0.513     ; 4.006      ;
-; -3.521 ; count[8]  ; count[15] ; clock        ; clock       ; 1.000        ; -0.513     ; 4.006      ;
-; -3.479 ; count[18] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.514     ; 3.963      ;
-; -3.479 ; count[18] ; count[15] ; clock        ; clock       ; 1.000        ; -0.514     ; 3.963      ;
-; -3.423 ; count[26] ; count[22] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.340      ;
-; -3.423 ; count[26] ; count[19] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.340      ;
-; -3.423 ; count[26] ; count[20] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.340      ;
-; -3.423 ; count[26] ; count[21] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.340      ;
-; -3.423 ; count[26] ; count[25] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.340      ;
-; -3.423 ; count[26] ; count[23] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.340      ;
-; -3.423 ; count[26] ; count[24] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.340      ;
-; -3.423 ; count[26] ; count[27] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.340      ;
-; -3.423 ; count[26] ; count[26] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.340      ;
-; -3.423 ; count[26] ; count[28] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.340      ;
-; -3.423 ; count[26] ; count[29] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.340      ;
-; -3.423 ; count[26] ; count[30] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.340      ;
-; -3.410 ; count[29] ; count[22] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.327      ;
-; -3.410 ; count[29] ; count[19] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.327      ;
-; -3.410 ; count[29] ; count[20] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.327      ;
-; -3.410 ; count[29] ; count[21] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.327      ;
-; -3.410 ; count[29] ; count[25] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.327      ;
-; -3.410 ; count[29] ; count[23] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.327      ;
-; -3.410 ; count[29] ; count[24] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.327      ;
-; -3.410 ; count[29] ; count[27] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.327      ;
-; -3.410 ; count[29] ; count[26] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.327      ;
-; -3.410 ; count[29] ; count[28] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.327      ;
-; -3.410 ; count[29] ; count[29] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.327      ;
-; -3.410 ; count[29] ; count[30] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.327      ;
-; -3.409 ; count[26] ; count[9]  ; clock        ; clock       ; 1.000        ; -0.084     ; 4.323      ;
-; -3.409 ; count[26] ; count[12] ; clock        ; clock       ; 1.000        ; -0.084     ; 4.323      ;
-; -3.409 ; count[26] ; count[13] ; clock        ; clock       ; 1.000        ; -0.084     ; 4.323      ;
-; -3.406 ; count[28] ; count[22] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.323      ;
-; -3.406 ; count[28] ; count[19] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.323      ;
-; -3.406 ; count[28] ; count[20] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.323      ;
-; -3.406 ; count[28] ; count[21] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.323      ;
-; -3.406 ; count[28] ; count[25] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.323      ;
-; -3.406 ; count[28] ; count[23] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.323      ;
-; -3.406 ; count[28] ; count[24] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.323      ;
-; -3.406 ; count[28] ; count[27] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.323      ;
-; -3.406 ; count[28] ; count[26] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.323      ;
-; -3.406 ; count[28] ; count[28] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.323      ;
-; -3.406 ; count[28] ; count[29] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.323      ;
-; -3.406 ; count[28] ; count[30] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.323      ;
-; -3.396 ; count[29] ; count[9]  ; clock        ; clock       ; 1.000        ; -0.084     ; 4.310      ;
-; -3.396 ; count[29] ; count[12] ; clock        ; clock       ; 1.000        ; -0.084     ; 4.310      ;
-; -3.396 ; count[29] ; count[13] ; clock        ; clock       ; 1.000        ; -0.084     ; 4.310      ;
-; -3.392 ; count[28] ; count[9]  ; clock        ; clock       ; 1.000        ; -0.084     ; 4.306      ;
-; -3.392 ; count[28] ; count[12] ; clock        ; clock       ; 1.000        ; -0.084     ; 4.306      ;
-; -3.392 ; count[28] ; count[13] ; clock        ; clock       ; 1.000        ; -0.084     ; 4.306      ;
-; -3.362 ; count[22] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.083     ; 4.277      ;
-; -3.362 ; count[22] ; count[15] ; clock        ; clock       ; 1.000        ; -0.083     ; 4.277      ;
-; -3.359 ; count[17] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.514     ; 3.843      ;
-; -3.359 ; count[17] ; count[15] ; clock        ; clock       ; 1.000        ; -0.514     ; 3.843      ;
-; -3.356 ; count[10] ; count[22] ; clock        ; clock       ; 1.000        ; -0.511     ; 3.843      ;
-; -3.356 ; count[10] ; count[19] ; clock        ; clock       ; 1.000        ; -0.511     ; 3.843      ;
-; -3.356 ; count[10] ; count[20] ; clock        ; clock       ; 1.000        ; -0.511     ; 3.843      ;
-; -3.356 ; count[10] ; count[21] ; clock        ; clock       ; 1.000        ; -0.511     ; 3.843      ;
-; -3.356 ; count[10] ; count[25] ; clock        ; clock       ; 1.000        ; -0.511     ; 3.843      ;
-; -3.356 ; count[10] ; count[23] ; clock        ; clock       ; 1.000        ; -0.511     ; 3.843      ;
-; -3.356 ; count[10] ; count[24] ; clock        ; clock       ; 1.000        ; -0.511     ; 3.843      ;
-; -3.356 ; count[10] ; count[27] ; clock        ; clock       ; 1.000        ; -0.511     ; 3.843      ;
-; -3.356 ; count[10] ; count[26] ; clock        ; clock       ; 1.000        ; -0.511     ; 3.843      ;
-; -3.356 ; count[10] ; count[28] ; clock        ; clock       ; 1.000        ; -0.511     ; 3.843      ;
-; -3.356 ; count[10] ; count[29] ; clock        ; clock       ; 1.000        ; -0.511     ; 3.843      ;
-; -3.356 ; count[10] ; count[30] ; clock        ; clock       ; 1.000        ; -0.511     ; 3.843      ;
-; -3.339 ; count[10] ; count[9]  ; clock        ; clock       ; 1.000        ; -0.514     ; 3.823      ;
-; -3.339 ; count[10] ; count[12] ; clock        ; clock       ; 1.000        ; -0.514     ; 3.823      ;
-; -3.339 ; count[10] ; count[13] ; clock        ; clock       ; 1.000        ; -0.514     ; 3.823      ;
-; -3.316 ; count[5]  ; count[7]  ; clock        ; clock       ; 1.000        ; -0.513     ; 3.801      ;
-; -3.316 ; count[5]  ; count[15] ; clock        ; clock       ; 1.000        ; -0.513     ; 3.801      ;
-; -3.312 ; count[15] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.081     ; 4.229      ;
-; -3.312 ; count[15] ; count[15] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.229      ;
-; -3.312 ; count[8]  ; count[22] ; clock        ; clock       ; 1.000        ; -0.511     ; 3.799      ;
-; -3.312 ; count[8]  ; count[19] ; clock        ; clock       ; 1.000        ; -0.511     ; 3.799      ;
-; -3.312 ; count[8]  ; count[20] ; clock        ; clock       ; 1.000        ; -0.511     ; 3.799      ;
-; -3.312 ; count[8]  ; count[21] ; clock        ; clock       ; 1.000        ; -0.511     ; 3.799      ;
-; -3.312 ; count[8]  ; count[25] ; clock        ; clock       ; 1.000        ; -0.511     ; 3.799      ;
-; -3.312 ; count[8]  ; count[23] ; clock        ; clock       ; 1.000        ; -0.511     ; 3.799      ;
-; -3.312 ; count[8]  ; count[24] ; clock        ; clock       ; 1.000        ; -0.511     ; 3.799      ;
-; -3.312 ; count[8]  ; count[27] ; clock        ; clock       ; 1.000        ; -0.511     ; 3.799      ;
-; -3.312 ; count[8]  ; count[26] ; clock        ; clock       ; 1.000        ; -0.511     ; 3.799      ;
-; -3.312 ; count[8]  ; count[28] ; clock        ; clock       ; 1.000        ; -0.511     ; 3.799      ;
-; -3.312 ; count[8]  ; count[29] ; clock        ; clock       ; 1.000        ; -0.511     ; 3.799      ;
-; -3.312 ; count[8]  ; count[30] ; clock        ; clock       ; 1.000        ; -0.511     ; 3.799      ;
-; -3.301 ; count[26] ; number[7] ; clock        ; clock       ; 1.000        ; 0.332      ; 4.631      ;
-; -3.301 ; count[26] ; number[6] ; clock        ; clock       ; 1.000        ; 0.332      ; 4.631      ;
-; -3.301 ; count[26] ; number[5] ; clock        ; clock       ; 1.000        ; 0.332      ; 4.631      ;
-; -3.301 ; count[26] ; number[4] ; clock        ; clock       ; 1.000        ; 0.332      ; 4.631      ;
-; -3.301 ; count[26] ; number[3] ; clock        ; clock       ; 1.000        ; 0.332      ; 4.631      ;
-; -3.301 ; count[26] ; number[2] ; clock        ; clock       ; 1.000        ; 0.332      ; 4.631      ;
-; -3.301 ; count[26] ; number[1] ; clock        ; clock       ; 1.000        ; 0.332      ; 4.631      ;
-; -3.301 ; count[26] ; number[0] ; clock        ; clock       ; 1.000        ; 0.332      ; 4.631      ;
+; -3.611 ; count[25] ; number[7] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.527      ;
+; -3.611 ; count[25] ; number[6] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.527      ;
+; -3.611 ; count[25] ; number[5] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.527      ;
+; -3.611 ; count[25] ; number[4] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.527      ;
+; -3.611 ; count[25] ; number[3] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.527      ;
+; -3.611 ; count[25] ; number[2] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.527      ;
+; -3.611 ; count[25] ; number[1] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.527      ;
+; -3.611 ; count[25] ; number[0] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.527      ;
+; -3.555 ; count[29] ; number[7] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.471      ;
+; -3.555 ; count[29] ; number[6] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.471      ;
+; -3.555 ; count[29] ; number[5] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.471      ;
+; -3.555 ; count[29] ; number[4] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.471      ;
+; -3.555 ; count[29] ; number[3] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.471      ;
+; -3.555 ; count[29] ; number[2] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.471      ;
+; -3.555 ; count[29] ; number[1] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.471      ;
+; -3.555 ; count[29] ; number[0] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.471      ;
+; -3.542 ; count[19] ; number[7] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.458      ;
+; -3.542 ; count[19] ; number[6] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.458      ;
+; -3.542 ; count[19] ; number[5] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.458      ;
+; -3.542 ; count[19] ; number[4] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.458      ;
+; -3.542 ; count[19] ; number[3] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.458      ;
+; -3.542 ; count[19] ; number[2] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.458      ;
+; -3.542 ; count[19] ; number[1] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.458      ;
+; -3.542 ; count[19] ; number[0] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.458      ;
+; -3.542 ; count[26] ; number[7] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.458      ;
+; -3.542 ; count[26] ; number[6] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.458      ;
+; -3.542 ; count[26] ; number[5] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.458      ;
+; -3.542 ; count[26] ; number[4] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.458      ;
+; -3.542 ; count[26] ; number[3] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.458      ;
+; -3.542 ; count[26] ; number[2] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.458      ;
+; -3.542 ; count[26] ; number[1] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.458      ;
+; -3.542 ; count[26] ; number[0] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.458      ;
+; -3.540 ; count[21] ; number[7] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.456      ;
+; -3.540 ; count[21] ; number[6] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.456      ;
+; -3.540 ; count[21] ; number[5] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.456      ;
+; -3.540 ; count[21] ; number[4] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.456      ;
+; -3.540 ; count[21] ; number[3] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.456      ;
+; -3.540 ; count[21] ; number[2] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.456      ;
+; -3.540 ; count[21] ; number[1] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.456      ;
+; -3.540 ; count[21] ; number[0] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.456      ;
+; -3.538 ; count[20] ; number[7] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.454      ;
+; -3.538 ; count[20] ; number[6] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.454      ;
+; -3.538 ; count[20] ; number[5] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.454      ;
+; -3.538 ; count[20] ; number[4] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.454      ;
+; -3.538 ; count[20] ; number[3] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.454      ;
+; -3.538 ; count[20] ; number[2] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.454      ;
+; -3.538 ; count[20] ; number[1] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.454      ;
+; -3.538 ; count[20] ; number[0] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.454      ;
+; -3.506 ; count[12] ; number[7] ; clock        ; clock       ; 1.000        ; -0.079     ; 4.425      ;
+; -3.506 ; count[12] ; number[6] ; clock        ; clock       ; 1.000        ; -0.079     ; 4.425      ;
+; -3.506 ; count[12] ; number[5] ; clock        ; clock       ; 1.000        ; -0.079     ; 4.425      ;
+; -3.506 ; count[12] ; number[4] ; clock        ; clock       ; 1.000        ; -0.079     ; 4.425      ;
+; -3.506 ; count[12] ; number[3] ; clock        ; clock       ; 1.000        ; -0.079     ; 4.425      ;
+; -3.506 ; count[12] ; number[2] ; clock        ; clock       ; 1.000        ; -0.079     ; 4.425      ;
+; -3.506 ; count[12] ; number[1] ; clock        ; clock       ; 1.000        ; -0.079     ; 4.425      ;
+; -3.506 ; count[12] ; number[0] ; clock        ; clock       ; 1.000        ; -0.079     ; 4.425      ;
+; -3.494 ; count[28] ; number[7] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.410      ;
+; -3.494 ; count[28] ; number[6] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.410      ;
+; -3.494 ; count[28] ; number[5] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.410      ;
+; -3.494 ; count[28] ; number[4] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.410      ;
+; -3.494 ; count[28] ; number[3] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.410      ;
+; -3.494 ; count[28] ; number[2] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.410      ;
+; -3.494 ; count[28] ; number[1] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.410      ;
+; -3.494 ; count[28] ; number[0] ; clock        ; clock       ; 1.000        ; -0.082     ; 4.410      ;
+; -3.487 ; count[25] ; count[12] ; clock        ; clock       ; 1.000        ; -0.084     ; 4.401      ;
+; -3.487 ; count[25] ; count[9]  ; clock        ; clock       ; 1.000        ; -0.084     ; 4.401      ;
+; -3.487 ; count[25] ; count[11] ; clock        ; clock       ; 1.000        ; -0.084     ; 4.401      ;
+; -3.487 ; count[25] ; count[13] ; clock        ; clock       ; 1.000        ; -0.084     ; 4.401      ;
+; -3.451 ; count[25] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.083     ; 4.366      ;
+; -3.451 ; count[25] ; count[8]  ; clock        ; clock       ; 1.000        ; -0.083     ; 4.366      ;
+; -3.451 ; count[25] ; count[10] ; clock        ; clock       ; 1.000        ; -0.083     ; 4.366      ;
+; -3.445 ; count[29] ; count[12] ; clock        ; clock       ; 1.000        ; -0.084     ; 4.359      ;
+; -3.445 ; count[29] ; count[9]  ; clock        ; clock       ; 1.000        ; -0.084     ; 4.359      ;
+; -3.445 ; count[29] ; count[11] ; clock        ; clock       ; 1.000        ; -0.084     ; 4.359      ;
+; -3.445 ; count[29] ; count[13] ; clock        ; clock       ; 1.000        ; -0.084     ; 4.359      ;
+; -3.444 ; count[15] ; number[7] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.361      ;
+; -3.444 ; count[15] ; number[6] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.361      ;
+; -3.444 ; count[15] ; number[5] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.361      ;
+; -3.444 ; count[15] ; number[4] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.361      ;
+; -3.444 ; count[15] ; number[3] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.361      ;
+; -3.444 ; count[15] ; number[2] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.361      ;
+; -3.444 ; count[15] ; number[1] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.361      ;
+; -3.444 ; count[15] ; number[0] ; clock        ; clock       ; 1.000        ; -0.081     ; 4.361      ;
+; -3.437 ; count[9]  ; number[7] ; clock        ; clock       ; 1.000        ; -0.079     ; 4.356      ;
+; -3.437 ; count[9]  ; number[6] ; clock        ; clock       ; 1.000        ; -0.079     ; 4.356      ;
+; -3.437 ; count[9]  ; number[5] ; clock        ; clock       ; 1.000        ; -0.079     ; 4.356      ;
+; -3.437 ; count[9]  ; number[4] ; clock        ; clock       ; 1.000        ; -0.079     ; 4.356      ;
+; -3.437 ; count[9]  ; number[3] ; clock        ; clock       ; 1.000        ; -0.079     ; 4.356      ;
+; -3.437 ; count[9]  ; number[2] ; clock        ; clock       ; 1.000        ; -0.079     ; 4.356      ;
+; -3.437 ; count[9]  ; number[1] ; clock        ; clock       ; 1.000        ; -0.079     ; 4.356      ;
+; -3.437 ; count[9]  ; number[0] ; clock        ; clock       ; 1.000        ; -0.079     ; 4.356      ;
+; -3.435 ; count[7]  ; number[7] ; clock        ; clock       ; 1.000        ; -0.079     ; 4.354      ;
+; -3.435 ; count[7]  ; number[6] ; clock        ; clock       ; 1.000        ; -0.079     ; 4.354      ;
+; -3.435 ; count[7]  ; number[5] ; clock        ; clock       ; 1.000        ; -0.079     ; 4.354      ;
+; -3.435 ; count[7]  ; number[4] ; clock        ; clock       ; 1.000        ; -0.079     ; 4.354      ;
+; -3.435 ; count[7]  ; number[3] ; clock        ; clock       ; 1.000        ; -0.079     ; 4.354      ;
+; -3.435 ; count[7]  ; number[2] ; clock        ; clock       ; 1.000        ; -0.079     ; 4.354      ;
+; -3.435 ; count[7]  ; number[1] ; clock        ; clock       ; 1.000        ; -0.079     ; 4.354      ;
+; -3.435 ; count[7]  ; number[0] ; clock        ; clock       ; 1.000        ; -0.079     ; 4.354      ;
+; -3.432 ; count[19] ; count[12] ; clock        ; clock       ; 1.000        ; -0.084     ; 4.346      ;
 +--------+-----------+-----------+--------------+-------------+--------------+------------+------------+
 
 
-+--------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Hold: 'clock'                                                                    ;
-+-------+--------------+-----------+--------------+-------------+--------------+------------+------------+
-; Slack ; From Node    ; To Node   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+-------+--------------+-----------+--------------+-------------+--------------+------------+------------+
-; 0.539 ; count[15]    ; count[16] ; clock        ; clock       ; 0.000        ; 0.514      ; 1.239      ;
-; 0.542 ; count[7]     ; count[8]  ; clock        ; clock       ; 0.000        ; 0.513      ; 1.241      ;
-; 0.557 ; count[30]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.512      ; 1.255      ;
-; 0.614 ; count[3]     ; count[3]  ; clock        ; clock       ; 0.000        ; 0.099      ; 0.899      ;
-; 0.616 ; count[1]     ; count[1]  ; clock        ; clock       ; 0.000        ; 0.099      ; 0.901      ;
-; 0.619 ; count[2]     ; count[2]  ; clock        ; clock       ; 0.000        ; 0.099      ; 0.904      ;
-; 0.620 ; count[4]     ; count[4]  ; clock        ; clock       ; 0.000        ; 0.099      ; 0.905      ;
-; 0.636 ; count[5]     ; count[5]  ; clock        ; clock       ; 0.000        ; 0.099      ; 0.921      ;
-; 0.638 ; count[17]    ; count[17] ; clock        ; clock       ; 0.000        ; 0.099      ; 0.923      ;
-; 0.639 ; count[6]     ; count[6]  ; clock        ; clock       ; 0.000        ; 0.099      ; 0.924      ;
-; 0.639 ; count[31]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.099      ; 0.924      ;
-; 0.641 ; count[0]     ; count[0]  ; clock        ; clock       ; 0.000        ; 0.099      ; 0.926      ;
-; 0.642 ; number[6]    ; number[6] ; clock        ; clock       ; 0.000        ; 0.098      ; 0.926      ;
-; 0.642 ; count[10]    ; count[10] ; clock        ; clock       ; 0.000        ; 0.099      ; 0.927      ;
-; 0.642 ; count[8]     ; count[8]  ; clock        ; clock       ; 0.000        ; 0.099      ; 0.927      ;
-; 0.645 ; number[5]    ; number[5] ; clock        ; clock       ; 0.000        ; 0.098      ; 0.929      ;
-; 0.646 ; number[7]    ; number[7] ; clock        ; clock       ; 0.000        ; 0.098      ; 0.930      ;
-; 0.654 ; count[15]    ; count[15] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.921      ;
-; 0.655 ; count[19]    ; count[19] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.922      ;
-; 0.655 ; count[21]    ; count[21] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.922      ;
-; 0.655 ; count[29]    ; count[29] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.922      ;
-; 0.656 ; count[27]    ; count[27] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.923      ;
-; 0.657 ; count[22]    ; count[22] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.924      ;
-; 0.657 ; count[7]     ; count[7]  ; clock        ; clock       ; 0.000        ; 0.081      ; 0.924      ;
-; 0.658 ; count[25]    ; count[25] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.925      ;
-; 0.658 ; count[23]    ; count[23] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.925      ;
-; 0.660 ; count[15]    ; count[17] ; clock        ; clock       ; 0.000        ; 0.514      ; 1.360      ;
-; 0.660 ; count[20]    ; count[20] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.927      ;
-; 0.661 ; count[24]    ; count[24] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.928      ;
-; 0.661 ; count[26]    ; count[26] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.928      ;
-; 0.661 ; count[28]    ; count[28] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.928      ;
-; 0.661 ; count[30]    ; count[30] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.928      ;
-; 0.663 ; count[16]    ; count[16] ; clock        ; clock       ; 0.000        ; 0.099      ; 0.948      ;
-; 0.663 ; count[29]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.512      ; 1.361      ;
-; 0.664 ; count[18]    ; count[18] ; clock        ; clock       ; 0.000        ; 0.099      ; 0.949      ;
-; 0.665 ; count[15]    ; count[18] ; clock        ; clock       ; 0.000        ; 0.514      ; 1.365      ;
-; 0.668 ; count[7]     ; count[10] ; clock        ; clock       ; 0.000        ; 0.513      ; 1.367      ;
-; 0.683 ; count[28]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.512      ; 1.381      ;
-; 0.741 ; count[9]     ; count[10] ; clock        ; clock       ; 0.000        ; 0.514      ; 1.441      ;
-; 0.785 ; number[1]    ; number[1] ; clock        ; clock       ; 0.000        ; 0.098      ; 1.069      ;
-; 0.790 ; count[27]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.512      ; 1.488      ;
-; 0.792 ; number[3]    ; number[3] ; clock        ; clock       ; 0.000        ; 0.098      ; 1.076      ;
-; 0.809 ; count[26]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.512      ; 1.507      ;
-; 0.822 ; count[13]    ; count[16] ; clock        ; clock       ; 0.000        ; 0.515      ; 1.523      ;
-; 0.846 ; count[12]    ; count[16] ; clock        ; clock       ; 0.000        ; 0.515      ; 1.547      ;
-; 0.917 ; count[25]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.512      ; 1.615      ;
-; 0.931 ; increment[0] ; number[0] ; clock        ; clock       ; 0.000        ; 0.509      ; 1.626      ;
-; 0.932 ; count[3]     ; count[4]  ; clock        ; clock       ; 0.000        ; 0.099      ; 1.217      ;
-; 0.933 ; count[1]     ; count[2]  ; clock        ; clock       ; 0.000        ; 0.099      ; 1.218      ;
-; 0.935 ; count[24]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.512      ; 1.633      ;
-; 0.937 ; count[13]    ; count[17] ; clock        ; clock       ; 0.000        ; 0.515      ; 1.638      ;
-; 0.945 ; count[0]     ; count[1]  ; clock        ; clock       ; 0.000        ; 0.099      ; 1.230      ;
-; 0.946 ; count[2]     ; count[3]  ; clock        ; clock       ; 0.000        ; 0.099      ; 1.231      ;
-; 0.947 ; count[4]     ; count[5]  ; clock        ; clock       ; 0.000        ; 0.099      ; 1.232      ;
-; 0.948 ; count[13]    ; count[18] ; clock        ; clock       ; 0.000        ; 0.515      ; 1.649      ;
-; 0.950 ; count[0]     ; count[2]  ; clock        ; clock       ; 0.000        ; 0.099      ; 1.235      ;
-; 0.951 ; count[2]     ; count[4]  ; clock        ; clock       ; 0.000        ; 0.099      ; 1.236      ;
-; 0.952 ; count[4]     ; count[6]  ; clock        ; clock       ; 0.000        ; 0.099      ; 1.237      ;
-; 0.954 ; count[5]     ; count[6]  ; clock        ; clock       ; 0.000        ; 0.099      ; 1.239      ;
-; 0.955 ; count[17]    ; count[18] ; clock        ; clock       ; 0.000        ; 0.099      ; 1.240      ;
-; 0.959 ; number[6]    ; number[7] ; clock        ; clock       ; 0.000        ; 0.098      ; 1.243      ;
-; 0.967 ; count[12]    ; count[17] ; clock        ; clock       ; 0.000        ; 0.515      ; 1.668      ;
-; 0.971 ; count[6]     ; count[8]  ; clock        ; clock       ; 0.000        ; 0.099      ; 1.256      ;
-; 0.972 ; number[5]    ; number[6] ; clock        ; clock       ; 0.000        ; 0.098      ; 1.256      ;
-; 0.972 ; count[12]    ; count[18] ; clock        ; clock       ; 0.000        ; 0.515      ; 1.673      ;
-; 0.973 ; count[21]    ; count[22] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.240      ;
-; 0.973 ; count[19]    ; count[20] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.240      ;
-; 0.973 ; count[29]    ; count[30] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.240      ;
-; 0.974 ; count[27]    ; count[28] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.241      ;
-; 0.974 ; count[8]     ; count[10] ; clock        ; clock       ; 0.000        ; 0.099      ; 1.259      ;
-; 0.975 ; count[23]    ; count[24] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.242      ;
-; 0.975 ; count[25]    ; count[26] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.242      ;
-; 0.977 ; increment[1] ; number[1] ; clock        ; clock       ; 0.000        ; 0.509      ; 1.672      ;
-; 0.977 ; number[5]    ; number[7] ; clock        ; clock       ; 0.000        ; 0.098      ; 1.261      ;
-; 0.984 ; count[22]    ; count[23] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.251      ;
-; 0.987 ; count[20]    ; count[21] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.254      ;
-; 0.988 ; count[28]    ; count[29] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.255      ;
-; 0.988 ; count[26]    ; count[27] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.255      ;
-; 0.988 ; count[24]    ; count[25] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.255      ;
-; 0.989 ; count[22]    ; count[24] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.256      ;
-; 0.990 ; count[16]    ; count[17] ; clock        ; clock       ; 0.000        ; 0.099      ; 1.275      ;
-; 0.992 ; count[20]    ; count[22] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.259      ;
-; 0.993 ; count[28]    ; count[30] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.260      ;
-; 0.993 ; count[26]    ; count[28] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.260      ;
-; 0.993 ; count[24]    ; count[26] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.260      ;
-; 0.995 ; count[16]    ; count[18] ; clock        ; clock       ; 0.000        ; 0.099      ; 1.280      ;
-; 1.029 ; number[4]    ; number[4] ; clock        ; clock       ; 0.000        ; 0.098      ; 1.313      ;
-; 1.043 ; count[23]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.512      ; 1.741      ;
-; 1.045 ; count[7]     ; count[16] ; clock        ; clock       ; 0.000        ; 0.514      ; 1.745      ;
-; 1.053 ; count[3]     ; count[5]  ; clock        ; clock       ; 0.000        ; 0.099      ; 1.338      ;
-; 1.054 ; count[1]     ; count[3]  ; clock        ; clock       ; 0.000        ; 0.099      ; 1.339      ;
-; 1.057 ; count[22]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.512      ; 1.755      ;
-; 1.058 ; count[3]     ; count[6]  ; clock        ; clock       ; 0.000        ; 0.099      ; 1.343      ;
-; 1.059 ; count[1]     ; count[4]  ; clock        ; clock       ; 0.000        ; 0.099      ; 1.344      ;
-; 1.062 ; number[0]    ; number[0] ; clock        ; clock       ; 0.000        ; 0.098      ; 1.346      ;
-; 1.071 ; count[0]     ; count[3]  ; clock        ; clock       ; 0.000        ; 0.099      ; 1.356      ;
-; 1.072 ; count[2]     ; count[5]  ; clock        ; clock       ; 0.000        ; 0.099      ; 1.357      ;
-; 1.076 ; count[0]     ; count[4]  ; clock        ; clock       ; 0.000        ; 0.099      ; 1.361      ;
-; 1.077 ; count[2]     ; count[6]  ; clock        ; clock       ; 0.000        ; 0.099      ; 1.362      ;
-; 1.078 ; count[4]     ; count[8]  ; clock        ; clock       ; 0.000        ; 0.099      ; 1.363      ;
-+-------+--------------+-----------+--------------+-------------+--------------+------------+------------+
++-----------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold: 'clock'                                                                 ;
++-------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node ; To Node   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+; 0.442 ; number[7] ; number[7] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.709      ;
+; 0.615 ; count[3]  ; count[3]  ; clock        ; clock       ; 0.000        ; 0.098      ; 0.899      ;
+; 0.617 ; count[1]  ; count[1]  ; clock        ; clock       ; 0.000        ; 0.098      ; 0.901      ;
+; 0.620 ; count[2]  ; count[2]  ; clock        ; clock       ; 0.000        ; 0.098      ; 0.904      ;
+; 0.621 ; count[4]  ; count[4]  ; clock        ; clock       ; 0.000        ; 0.098      ; 0.905      ;
+; 0.637 ; count[5]  ; count[5]  ; clock        ; clock       ; 0.000        ; 0.098      ; 0.921      ;
+; 0.640 ; count[6]  ; count[6]  ; clock        ; clock       ; 0.000        ; 0.098      ; 0.924      ;
+; 0.642 ; count[0]  ; count[0]  ; clock        ; clock       ; 0.000        ; 0.098      ; 0.926      ;
+; 0.655 ; count[19] ; count[19] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.922      ;
+; 0.655 ; count[21] ; count[21] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.922      ;
+; 0.655 ; count[29] ; count[29] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.922      ;
+; 0.656 ; number[2] ; number[2] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.923      ;
+; 0.656 ; count[27] ; count[27] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.923      ;
+; 0.656 ; count[17] ; count[17] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.923      ;
+; 0.657 ; count[31] ; count[31] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.924      ;
+; 0.657 ; count[22] ; count[22] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.924      ;
+; 0.658 ; number[3] ; number[3] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.925      ;
+; 0.658 ; count[7]  ; count[7]  ; clock        ; clock       ; 0.000        ; 0.080      ; 0.924      ;
+; 0.658 ; count[23] ; count[23] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.925      ;
+; 0.658 ; count[25] ; count[25] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.925      ;
+; 0.660 ; count[20] ; count[20] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.927      ;
+; 0.661 ; count[8]  ; count[8]  ; clock        ; clock       ; 0.000        ; 0.080      ; 0.927      ;
+; 0.661 ; count[10] ; count[10] ; clock        ; clock       ; 0.000        ; 0.080      ; 0.927      ;
+; 0.661 ; count[24] ; count[24] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.928      ;
+; 0.661 ; count[26] ; count[26] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.928      ;
+; 0.661 ; count[28] ; count[28] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.928      ;
+; 0.661 ; count[30] ; count[30] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.928      ;
+; 0.681 ; count[16] ; count[16] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.948      ;
+; 0.682 ; count[18] ; count[18] ; clock        ; clock       ; 0.000        ; 0.081      ; 0.949      ;
+; 0.933 ; count[3]  ; count[4]  ; clock        ; clock       ; 0.000        ; 0.098      ; 1.217      ;
+; 0.934 ; count[1]  ; count[2]  ; clock        ; clock       ; 0.000        ; 0.098      ; 1.218      ;
+; 0.946 ; count[0]  ; count[1]  ; clock        ; clock       ; 0.000        ; 0.098      ; 1.230      ;
+; 0.947 ; count[2]  ; count[3]  ; clock        ; clock       ; 0.000        ; 0.098      ; 1.231      ;
+; 0.948 ; count[4]  ; count[5]  ; clock        ; clock       ; 0.000        ; 0.098      ; 1.232      ;
+; 0.951 ; count[0]  ; count[2]  ; clock        ; clock       ; 0.000        ; 0.098      ; 1.235      ;
+; 0.952 ; count[2]  ; count[4]  ; clock        ; clock       ; 0.000        ; 0.098      ; 1.236      ;
+; 0.953 ; count[4]  ; count[6]  ; clock        ; clock       ; 0.000        ; 0.098      ; 1.237      ;
+; 0.955 ; count[5]  ; count[6]  ; clock        ; clock       ; 0.000        ; 0.098      ; 1.239      ;
+; 0.973 ; count[21] ; count[22] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.240      ;
+; 0.973 ; count[19] ; count[20] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.240      ;
+; 0.973 ; count[29] ; count[30] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.240      ;
+; 0.973 ; count[17] ; count[18] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.240      ;
+; 0.974 ; number[2] ; number[3] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.241      ;
+; 0.974 ; count[27] ; count[28] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.241      ;
+; 0.975 ; count[7]  ; count[8]  ; clock        ; clock       ; 0.000        ; 0.080      ; 1.241      ;
+; 0.975 ; count[23] ; count[24] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.242      ;
+; 0.975 ; count[25] ; count[26] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.242      ;
+; 0.984 ; count[22] ; count[23] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.251      ;
+; 0.985 ; number[3] ; number[4] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.252      ;
+; 0.987 ; count[20] ; count[21] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.254      ;
+; 0.988 ; count[28] ; count[29] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.255      ;
+; 0.988 ; count[26] ; count[27] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.255      ;
+; 0.988 ; count[30] ; count[31] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.255      ;
+; 0.988 ; count[24] ; count[25] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.255      ;
+; 0.989 ; count[22] ; count[24] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.256      ;
+; 0.990 ; number[3] ; number[5] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.257      ;
+; 0.992 ; count[20] ; count[22] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.259      ;
+; 0.993 ; count[8]  ; count[10] ; clock        ; clock       ; 0.000        ; 0.080      ; 1.259      ;
+; 0.993 ; count[28] ; count[30] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.260      ;
+; 0.993 ; count[26] ; count[28] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.260      ;
+; 0.993 ; count[24] ; count[26] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.260      ;
+; 1.005 ; number[1] ; number[1] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.272      ;
+; 1.008 ; count[16] ; count[17] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.275      ;
+; 1.009 ; count[18] ; count[19] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.276      ;
+; 1.013 ; count[16] ; count[18] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.280      ;
+; 1.014 ; count[18] ; count[20] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.281      ;
+; 1.030 ; number[5] ; number[5] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.297      ;
+; 1.047 ; number[0] ; number[0] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.314      ;
+; 1.054 ; count[3]  ; count[5]  ; clock        ; clock       ; 0.000        ; 0.098      ; 1.338      ;
+; 1.055 ; count[1]  ; count[3]  ; clock        ; clock       ; 0.000        ; 0.098      ; 1.339      ;
+; 1.059 ; count[3]  ; count[6]  ; clock        ; clock       ; 0.000        ; 0.098      ; 1.343      ;
+; 1.060 ; count[1]  ; count[4]  ; clock        ; clock       ; 0.000        ; 0.098      ; 1.344      ;
+; 1.072 ; count[0]  ; count[3]  ; clock        ; clock       ; 0.000        ; 0.098      ; 1.356      ;
+; 1.073 ; count[2]  ; count[5]  ; clock        ; clock       ; 0.000        ; 0.098      ; 1.357      ;
+; 1.077 ; count[0]  ; count[4]  ; clock        ; clock       ; 0.000        ; 0.098      ; 1.361      ;
+; 1.078 ; count[2]  ; count[6]  ; clock        ; clock       ; 0.000        ; 0.098      ; 1.362      ;
+; 1.094 ; count[21] ; count[23] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.361      ;
+; 1.094 ; count[19] ; count[21] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.361      ;
+; 1.094 ; count[29] ; count[31] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.361      ;
+; 1.094 ; count[17] ; count[19] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.361      ;
+; 1.095 ; number[2] ; number[4] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.362      ;
+; 1.095 ; count[27] ; count[29] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.362      ;
+; 1.096 ; count[25] ; count[27] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.363      ;
+; 1.096 ; count[23] ; count[25] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.363      ;
+; 1.099 ; count[21] ; count[24] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.366      ;
+; 1.099 ; count[19] ; count[22] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.366      ;
+; 1.099 ; count[17] ; count[20] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.366      ;
+; 1.100 ; number[2] ; number[5] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.367      ;
+; 1.100 ; count[27] ; count[30] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.367      ;
+; 1.101 ; count[7]  ; count[10] ; clock        ; clock       ; 0.000        ; 0.080      ; 1.367      ;
+; 1.101 ; count[25] ; count[28] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.368      ;
+; 1.101 ; count[23] ; count[26] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.368      ;
+; 1.110 ; count[22] ; count[25] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.377      ;
+; 1.111 ; number[3] ; number[6] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.378      ;
+; 1.113 ; count[20] ; count[23] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.380      ;
+; 1.114 ; count[28] ; count[31] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.381      ;
+; 1.114 ; count[26] ; count[29] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.381      ;
+; 1.114 ; count[24] ; count[27] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.381      ;
+; 1.115 ; count[22] ; count[26] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.382      ;
+; 1.116 ; number[3] ; number[7] ; clock        ; clock       ; 0.000        ; 0.081      ; 1.383      ;
++-------+-----------+-----------+--------------+-------------+--------------+------------+------------+
 
 
 -----------------------------------------------
@@ -393,13 +393,13 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+--------------------------------------------------+
-; Slow 1200mV 0C Model Fmax Summary                ;
-+------------+-----------------+------------+------+
-; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
-+------------+-----------------+------------+------+
-; 234.47 MHz ; 234.47 MHz      ; clock      ;      ;
-+------------+-----------------+------------+------+
++-------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary               ;
++-----------+-----------------+------------+------+
+; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
++-----------+-----------------+------------+------+
+; 237.3 MHz ; 237.3 MHz       ; clock      ;      ;
++-----------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -408,7 +408,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+-------------------+
 ; Clock ; Slack  ; End Point TNS     ;
 +-------+--------+-------------------+
-; clock ; -3.265 ; -117.210          ;
+; clock ; -3.214 ; -116.569          ;
 +-------+--------+-------------------+
 
 
@@ -417,7 +417,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+-------------------+
 ; Clock ; Slack ; End Point TNS     ;
 +-------+-------+-------------------+
-; clock ; 0.486 ; 0.000             ;
+; clock ; 0.400 ; 0.000             ;
 +-------+-------+-------------------+
 
 
@@ -447,215 +447,215 @@ No paths to report.
 +--------+-----------+-----------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node ; To Node   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-----------+-----------+--------------+-------------+--------------+------------+------------+
-; -3.265 ; count[26] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.075     ; 4.189      ;
-; -3.265 ; count[26] ; count[15] ; clock        ; clock       ; 1.000        ; -0.075     ; 4.189      ;
-; -3.254 ; count[29] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.075     ; 4.178      ;
-; -3.254 ; count[29] ; count[15] ; clock        ; clock       ; 1.000        ; -0.075     ; 4.178      ;
-; -3.248 ; count[28] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.075     ; 4.172      ;
-; -3.248 ; count[28] ; count[15] ; clock        ; clock       ; 1.000        ; -0.075     ; 4.172      ;
-; -3.193 ; count[10] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.470     ; 3.722      ;
-; -3.193 ; count[10] ; count[15] ; clock        ; clock       ; 1.000        ; -0.470     ; 3.722      ;
-; -3.143 ; count[8]  ; count[7]  ; clock        ; clock       ; 1.000        ; -0.470     ; 3.672      ;
-; -3.143 ; count[8]  ; count[15] ; clock        ; clock       ; 1.000        ; -0.470     ; 3.672      ;
-; -3.097 ; count[18] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.470     ; 3.626      ;
-; -3.097 ; count[18] ; count[15] ; clock        ; clock       ; 1.000        ; -0.470     ; 3.626      ;
-; -3.037 ; count[26] ; count[22] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.963      ;
-; -3.037 ; count[26] ; count[19] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.963      ;
-; -3.037 ; count[26] ; count[20] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.963      ;
-; -3.037 ; count[26] ; count[21] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.963      ;
-; -3.037 ; count[26] ; count[25] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.963      ;
-; -3.037 ; count[26] ; count[23] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.963      ;
-; -3.037 ; count[26] ; count[24] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.963      ;
-; -3.037 ; count[26] ; count[27] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.963      ;
-; -3.037 ; count[26] ; count[26] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.963      ;
-; -3.037 ; count[26] ; count[28] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.963      ;
-; -3.037 ; count[26] ; count[29] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.963      ;
-; -3.037 ; count[26] ; count[30] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.963      ;
-; -3.026 ; count[29] ; count[22] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.952      ;
-; -3.026 ; count[29] ; count[19] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.952      ;
-; -3.026 ; count[29] ; count[20] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.952      ;
-; -3.026 ; count[29] ; count[21] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.952      ;
-; -3.026 ; count[29] ; count[25] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.952      ;
-; -3.026 ; count[29] ; count[23] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.952      ;
-; -3.026 ; count[29] ; count[24] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.952      ;
-; -3.026 ; count[29] ; count[27] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.952      ;
-; -3.026 ; count[29] ; count[26] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.952      ;
-; -3.026 ; count[29] ; count[28] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.952      ;
-; -3.026 ; count[29] ; count[29] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.952      ;
-; -3.026 ; count[29] ; count[30] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.952      ;
-; -3.021 ; count[26] ; count[9]  ; clock        ; clock       ; 1.000        ; -0.076     ; 3.944      ;
-; -3.021 ; count[26] ; count[12] ; clock        ; clock       ; 1.000        ; -0.076     ; 3.944      ;
-; -3.021 ; count[26] ; count[13] ; clock        ; clock       ; 1.000        ; -0.076     ; 3.944      ;
-; -3.020 ; count[28] ; count[22] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.946      ;
-; -3.020 ; count[28] ; count[19] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.946      ;
-; -3.020 ; count[28] ; count[20] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.946      ;
-; -3.020 ; count[28] ; count[21] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.946      ;
-; -3.020 ; count[28] ; count[25] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.946      ;
-; -3.020 ; count[28] ; count[23] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.946      ;
-; -3.020 ; count[28] ; count[24] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.946      ;
-; -3.020 ; count[28] ; count[27] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.946      ;
-; -3.020 ; count[28] ; count[26] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.946      ;
-; -3.020 ; count[28] ; count[28] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.946      ;
-; -3.020 ; count[28] ; count[29] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.946      ;
-; -3.020 ; count[28] ; count[30] ; clock        ; clock       ; 1.000        ; -0.073     ; 3.946      ;
-; -3.010 ; count[29] ; count[9]  ; clock        ; clock       ; 1.000        ; -0.076     ; 3.933      ;
-; -3.010 ; count[29] ; count[12] ; clock        ; clock       ; 1.000        ; -0.076     ; 3.933      ;
-; -3.010 ; count[29] ; count[13] ; clock        ; clock       ; 1.000        ; -0.076     ; 3.933      ;
-; -3.004 ; count[28] ; count[9]  ; clock        ; clock       ; 1.000        ; -0.076     ; 3.927      ;
-; -3.004 ; count[28] ; count[12] ; clock        ; clock       ; 1.000        ; -0.076     ; 3.927      ;
-; -3.004 ; count[28] ; count[13] ; clock        ; clock       ; 1.000        ; -0.076     ; 3.927      ;
-; -2.999 ; count[17] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.470     ; 3.528      ;
-; -2.999 ; count[17] ; count[15] ; clock        ; clock       ; 1.000        ; -0.470     ; 3.528      ;
-; -2.995 ; count[22] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.075     ; 3.919      ;
-; -2.995 ; count[22] ; count[15] ; clock        ; clock       ; 1.000        ; -0.075     ; 3.919      ;
-; -2.993 ; count[10] ; count[22] ; clock        ; clock       ; 1.000        ; -0.468     ; 3.524      ;
-; -2.993 ; count[10] ; count[19] ; clock        ; clock       ; 1.000        ; -0.468     ; 3.524      ;
-; -2.993 ; count[10] ; count[20] ; clock        ; clock       ; 1.000        ; -0.468     ; 3.524      ;
-; -2.993 ; count[10] ; count[21] ; clock        ; clock       ; 1.000        ; -0.468     ; 3.524      ;
-; -2.993 ; count[10] ; count[25] ; clock        ; clock       ; 1.000        ; -0.468     ; 3.524      ;
-; -2.993 ; count[10] ; count[23] ; clock        ; clock       ; 1.000        ; -0.468     ; 3.524      ;
-; -2.993 ; count[10] ; count[24] ; clock        ; clock       ; 1.000        ; -0.468     ; 3.524      ;
-; -2.993 ; count[10] ; count[27] ; clock        ; clock       ; 1.000        ; -0.468     ; 3.524      ;
-; -2.993 ; count[10] ; count[26] ; clock        ; clock       ; 1.000        ; -0.468     ; 3.524      ;
-; -2.993 ; count[10] ; count[28] ; clock        ; clock       ; 1.000        ; -0.468     ; 3.524      ;
-; -2.993 ; count[10] ; count[29] ; clock        ; clock       ; 1.000        ; -0.468     ; 3.524      ;
-; -2.993 ; count[10] ; count[30] ; clock        ; clock       ; 1.000        ; -0.468     ; 3.524      ;
-; -2.991 ; count[5]  ; count[7]  ; clock        ; clock       ; 1.000        ; -0.470     ; 3.520      ;
-; -2.991 ; count[5]  ; count[15] ; clock        ; clock       ; 1.000        ; -0.470     ; 3.520      ;
-; -2.977 ; count[10] ; count[9]  ; clock        ; clock       ; 1.000        ; -0.471     ; 3.505      ;
-; -2.977 ; count[10] ; count[12] ; clock        ; clock       ; 1.000        ; -0.471     ; 3.505      ;
-; -2.977 ; count[10] ; count[13] ; clock        ; clock       ; 1.000        ; -0.471     ; 3.505      ;
-; -2.958 ; count[8]  ; count[22] ; clock        ; clock       ; 1.000        ; -0.468     ; 3.489      ;
-; -2.958 ; count[8]  ; count[19] ; clock        ; clock       ; 1.000        ; -0.468     ; 3.489      ;
-; -2.958 ; count[8]  ; count[20] ; clock        ; clock       ; 1.000        ; -0.468     ; 3.489      ;
-; -2.958 ; count[8]  ; count[21] ; clock        ; clock       ; 1.000        ; -0.468     ; 3.489      ;
-; -2.958 ; count[8]  ; count[25] ; clock        ; clock       ; 1.000        ; -0.468     ; 3.489      ;
-; -2.958 ; count[8]  ; count[23] ; clock        ; clock       ; 1.000        ; -0.468     ; 3.489      ;
-; -2.958 ; count[8]  ; count[24] ; clock        ; clock       ; 1.000        ; -0.468     ; 3.489      ;
-; -2.958 ; count[8]  ; count[27] ; clock        ; clock       ; 1.000        ; -0.468     ; 3.489      ;
-; -2.958 ; count[8]  ; count[26] ; clock        ; clock       ; 1.000        ; -0.468     ; 3.489      ;
-; -2.958 ; count[8]  ; count[28] ; clock        ; clock       ; 1.000        ; -0.468     ; 3.489      ;
-; -2.958 ; count[8]  ; count[29] ; clock        ; clock       ; 1.000        ; -0.468     ; 3.489      ;
-; -2.958 ; count[8]  ; count[30] ; clock        ; clock       ; 1.000        ; -0.468     ; 3.489      ;
-; -2.946 ; count[15] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.072     ; 3.873      ;
-; -2.946 ; count[15] ; count[15] ; clock        ; clock       ; 1.000        ; -0.072     ; 3.873      ;
-; -2.943 ; count[23] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.075     ; 3.867      ;
-; -2.943 ; count[23] ; count[15] ; clock        ; clock       ; 1.000        ; -0.075     ; 3.867      ;
-; -2.942 ; count[8]  ; count[9]  ; clock        ; clock       ; 1.000        ; -0.471     ; 3.470      ;
-; -2.942 ; count[8]  ; count[12] ; clock        ; clock       ; 1.000        ; -0.471     ; 3.470      ;
-; -2.942 ; count[8]  ; count[13] ; clock        ; clock       ; 1.000        ; -0.471     ; 3.470      ;
-; -2.928 ; count[11] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.469     ; 3.458      ;
-; -2.928 ; count[11] ; count[15] ; clock        ; clock       ; 1.000        ; -0.469     ; 3.458      ;
-; -2.915 ; count[26] ; number[7] ; clock        ; clock       ; 1.000        ; 0.306      ; 4.220      ;
+; -3.214 ; count[25] ; number[7] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.140      ;
+; -3.214 ; count[25] ; number[6] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.140      ;
+; -3.214 ; count[25] ; number[5] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.140      ;
+; -3.214 ; count[25] ; number[4] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.140      ;
+; -3.214 ; count[25] ; number[3] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.140      ;
+; -3.214 ; count[25] ; number[2] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.140      ;
+; -3.214 ; count[25] ; number[1] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.140      ;
+; -3.214 ; count[25] ; number[0] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.140      ;
+; -3.166 ; count[29] ; number[7] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.092      ;
+; -3.166 ; count[29] ; number[6] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.092      ;
+; -3.166 ; count[29] ; number[5] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.092      ;
+; -3.166 ; count[29] ; number[4] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.092      ;
+; -3.166 ; count[29] ; number[3] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.092      ;
+; -3.166 ; count[29] ; number[2] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.092      ;
+; -3.166 ; count[29] ; number[1] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.092      ;
+; -3.166 ; count[29] ; number[0] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.092      ;
+; -3.157 ; count[19] ; number[7] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.083      ;
+; -3.157 ; count[19] ; number[6] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.083      ;
+; -3.157 ; count[19] ; number[5] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.083      ;
+; -3.157 ; count[19] ; number[4] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.083      ;
+; -3.157 ; count[19] ; number[3] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.083      ;
+; -3.157 ; count[19] ; number[2] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.083      ;
+; -3.157 ; count[19] ; number[1] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.083      ;
+; -3.157 ; count[19] ; number[0] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.083      ;
+; -3.155 ; count[26] ; number[7] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.081      ;
+; -3.155 ; count[26] ; number[6] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.081      ;
+; -3.155 ; count[26] ; number[5] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.081      ;
+; -3.155 ; count[26] ; number[4] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.081      ;
+; -3.155 ; count[26] ; number[3] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.081      ;
+; -3.155 ; count[26] ; number[2] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.081      ;
+; -3.155 ; count[26] ; number[1] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.081      ;
+; -3.155 ; count[26] ; number[0] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.081      ;
+; -3.155 ; count[20] ; number[7] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.081      ;
+; -3.155 ; count[20] ; number[6] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.081      ;
+; -3.155 ; count[20] ; number[5] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.081      ;
+; -3.155 ; count[20] ; number[4] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.081      ;
+; -3.155 ; count[20] ; number[3] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.081      ;
+; -3.155 ; count[20] ; number[2] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.081      ;
+; -3.155 ; count[20] ; number[1] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.081      ;
+; -3.155 ; count[20] ; number[0] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.081      ;
+; -3.153 ; count[21] ; number[7] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.079      ;
+; -3.153 ; count[21] ; number[6] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.079      ;
+; -3.153 ; count[21] ; number[5] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.079      ;
+; -3.153 ; count[21] ; number[4] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.079      ;
+; -3.153 ; count[21] ; number[3] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.079      ;
+; -3.153 ; count[21] ; number[2] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.079      ;
+; -3.153 ; count[21] ; number[1] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.079      ;
+; -3.153 ; count[21] ; number[0] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.079      ;
+; -3.130 ; count[12] ; number[7] ; clock        ; clock       ; 1.000        ; -0.070     ; 4.059      ;
+; -3.130 ; count[12] ; number[6] ; clock        ; clock       ; 1.000        ; -0.070     ; 4.059      ;
+; -3.130 ; count[12] ; number[5] ; clock        ; clock       ; 1.000        ; -0.070     ; 4.059      ;
+; -3.130 ; count[12] ; number[4] ; clock        ; clock       ; 1.000        ; -0.070     ; 4.059      ;
+; -3.130 ; count[12] ; number[3] ; clock        ; clock       ; 1.000        ; -0.070     ; 4.059      ;
+; -3.130 ; count[12] ; number[2] ; clock        ; clock       ; 1.000        ; -0.070     ; 4.059      ;
+; -3.130 ; count[12] ; number[1] ; clock        ; clock       ; 1.000        ; -0.070     ; 4.059      ;
+; -3.130 ; count[12] ; number[0] ; clock        ; clock       ; 1.000        ; -0.070     ; 4.059      ;
+; -3.121 ; count[28] ; number[7] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.047      ;
+; -3.121 ; count[28] ; number[6] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.047      ;
+; -3.121 ; count[28] ; number[5] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.047      ;
+; -3.121 ; count[28] ; number[4] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.047      ;
+; -3.121 ; count[28] ; number[3] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.047      ;
+; -3.121 ; count[28] ; number[2] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.047      ;
+; -3.121 ; count[28] ; number[1] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.047      ;
+; -3.121 ; count[28] ; number[0] ; clock        ; clock       ; 1.000        ; -0.073     ; 4.047      ;
+; -3.107 ; count[25] ; count[12] ; clock        ; clock       ; 1.000        ; -0.075     ; 4.031      ;
+; -3.107 ; count[25] ; count[9]  ; clock        ; clock       ; 1.000        ; -0.075     ; 4.031      ;
+; -3.107 ; count[25] ; count[11] ; clock        ; clock       ; 1.000        ; -0.075     ; 4.031      ;
+; -3.107 ; count[25] ; count[13] ; clock        ; clock       ; 1.000        ; -0.075     ; 4.031      ;
+; -3.074 ; count[25] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.074     ; 3.999      ;
+; -3.074 ; count[25] ; count[8]  ; clock        ; clock       ; 1.000        ; -0.074     ; 3.999      ;
+; -3.074 ; count[25] ; count[10] ; clock        ; clock       ; 1.000        ; -0.074     ; 3.999      ;
+; -3.070 ; count[29] ; count[12] ; clock        ; clock       ; 1.000        ; -0.075     ; 3.994      ;
+; -3.070 ; count[29] ; count[9]  ; clock        ; clock       ; 1.000        ; -0.075     ; 3.994      ;
+; -3.070 ; count[29] ; count[11] ; clock        ; clock       ; 1.000        ; -0.075     ; 3.994      ;
+; -3.070 ; count[29] ; count[13] ; clock        ; clock       ; 1.000        ; -0.075     ; 3.994      ;
+; -3.065 ; count[15] ; number[7] ; clock        ; clock       ; 1.000        ; -0.072     ; 3.992      ;
+; -3.065 ; count[15] ; number[6] ; clock        ; clock       ; 1.000        ; -0.072     ; 3.992      ;
+; -3.065 ; count[15] ; number[5] ; clock        ; clock       ; 1.000        ; -0.072     ; 3.992      ;
+; -3.065 ; count[15] ; number[4] ; clock        ; clock       ; 1.000        ; -0.072     ; 3.992      ;
+; -3.065 ; count[15] ; number[3] ; clock        ; clock       ; 1.000        ; -0.072     ; 3.992      ;
+; -3.065 ; count[15] ; number[2] ; clock        ; clock       ; 1.000        ; -0.072     ; 3.992      ;
+; -3.065 ; count[15] ; number[1] ; clock        ; clock       ; 1.000        ; -0.072     ; 3.992      ;
+; -3.065 ; count[15] ; number[0] ; clock        ; clock       ; 1.000        ; -0.072     ; 3.992      ;
+; -3.061 ; count[19] ; count[12] ; clock        ; clock       ; 1.000        ; -0.075     ; 3.985      ;
+; -3.061 ; count[19] ; count[9]  ; clock        ; clock       ; 1.000        ; -0.075     ; 3.985      ;
+; -3.061 ; count[19] ; count[11] ; clock        ; clock       ; 1.000        ; -0.075     ; 3.985      ;
+; -3.061 ; count[19] ; count[13] ; clock        ; clock       ; 1.000        ; -0.075     ; 3.985      ;
+; -3.059 ; count[26] ; count[12] ; clock        ; clock       ; 1.000        ; -0.075     ; 3.983      ;
+; -3.059 ; count[26] ; count[9]  ; clock        ; clock       ; 1.000        ; -0.075     ; 3.983      ;
+; -3.059 ; count[26] ; count[11] ; clock        ; clock       ; 1.000        ; -0.075     ; 3.983      ;
+; -3.059 ; count[26] ; count[13] ; clock        ; clock       ; 1.000        ; -0.075     ; 3.983      ;
+; -3.059 ; count[20] ; count[12] ; clock        ; clock       ; 1.000        ; -0.075     ; 3.983      ;
+; -3.059 ; count[20] ; count[9]  ; clock        ; clock       ; 1.000        ; -0.075     ; 3.983      ;
+; -3.059 ; count[20] ; count[11] ; clock        ; clock       ; 1.000        ; -0.075     ; 3.983      ;
+; -3.059 ; count[20] ; count[13] ; clock        ; clock       ; 1.000        ; -0.075     ; 3.983      ;
+; -3.052 ; count[7]  ; number[7] ; clock        ; clock       ; 1.000        ; -0.071     ; 3.980      ;
+; -3.052 ; count[7]  ; number[6] ; clock        ; clock       ; 1.000        ; -0.071     ; 3.980      ;
+; -3.052 ; count[7]  ; number[5] ; clock        ; clock       ; 1.000        ; -0.071     ; 3.980      ;
+; -3.052 ; count[7]  ; number[4] ; clock        ; clock       ; 1.000        ; -0.071     ; 3.980      ;
+; -3.052 ; count[7]  ; number[3] ; clock        ; clock       ; 1.000        ; -0.071     ; 3.980      ;
 +--------+-----------+-----------+--------------+-------------+--------------+------------+------------+
 
 
-+--------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Hold: 'clock'                                                                     ;
-+-------+--------------+-----------+--------------+-------------+--------------+------------+------------+
-; Slack ; From Node    ; To Node   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+-------+--------------+-----------+--------------+-------------+--------------+------------+------------+
-; 0.486 ; count[15]    ; count[16] ; clock        ; clock       ; 0.000        ; 0.470      ; 1.127      ;
-; 0.491 ; count[7]     ; count[8]  ; clock        ; clock       ; 0.000        ; 0.470      ; 1.132      ;
-; 0.496 ; count[30]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.468      ; 1.135      ;
-; 0.562 ; count[3]     ; count[3]  ; clock        ; clock       ; 0.000        ; 0.088      ; 0.821      ;
-; 0.565 ; count[1]     ; count[1]  ; clock        ; clock       ; 0.000        ; 0.088      ; 0.824      ;
-; 0.567 ; count[2]     ; count[2]  ; clock        ; clock       ; 0.000        ; 0.088      ; 0.826      ;
-; 0.568 ; count[4]     ; count[4]  ; clock        ; clock       ; 0.000        ; 0.088      ; 0.827      ;
-; 0.583 ; count[5]     ; count[5]  ; clock        ; clock       ; 0.000        ; 0.088      ; 0.842      ;
-; 0.584 ; count[6]     ; count[6]  ; clock        ; clock       ; 0.000        ; 0.088      ; 0.843      ;
-; 0.584 ; count[31]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.088      ; 0.843      ;
-; 0.585 ; count[17]    ; count[17] ; clock        ; clock       ; 0.000        ; 0.088      ; 0.844      ;
-; 0.585 ; count[15]    ; count[17] ; clock        ; clock       ; 0.000        ; 0.470      ; 1.226      ;
-; 0.588 ; number[6]    ; number[6] ; clock        ; clock       ; 0.000        ; 0.088      ; 0.847      ;
-; 0.588 ; count[0]     ; count[0]  ; clock        ; clock       ; 0.000        ; 0.088      ; 0.847      ;
-; 0.588 ; count[10]    ; count[10] ; clock        ; clock       ; 0.000        ; 0.088      ; 0.847      ;
-; 0.588 ; count[8]     ; count[8]  ; clock        ; clock       ; 0.000        ; 0.088      ; 0.847      ;
-; 0.588 ; count[29]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.468      ; 1.227      ;
-; 0.590 ; number[5]    ; number[5] ; clock        ; clock       ; 0.000        ; 0.088      ; 0.849      ;
-; 0.591 ; number[7]    ; number[7] ; clock        ; clock       ; 0.000        ; 0.088      ; 0.850      ;
-; 0.596 ; count[15]    ; count[18] ; clock        ; clock       ; 0.000        ; 0.470      ; 1.237      ;
-; 0.598 ; count[15]    ; count[15] ; clock        ; clock       ; 0.000        ; 0.072      ; 0.841      ;
-; 0.598 ; count[19]    ; count[19] ; clock        ; clock       ; 0.000        ; 0.073      ; 0.842      ;
-; 0.598 ; count[21]    ; count[21] ; clock        ; clock       ; 0.000        ; 0.073      ; 0.842      ;
-; 0.598 ; count[29]    ; count[29] ; clock        ; clock       ; 0.000        ; 0.073      ; 0.842      ;
-; 0.599 ; count[27]    ; count[27] ; clock        ; clock       ; 0.000        ; 0.073      ; 0.843      ;
-; 0.600 ; count[22]    ; count[22] ; clock        ; clock       ; 0.000        ; 0.073      ; 0.844      ;
-; 0.601 ; count[7]     ; count[10] ; clock        ; clock       ; 0.000        ; 0.470      ; 1.242      ;
-; 0.602 ; count[7]     ; count[7]  ; clock        ; clock       ; 0.000        ; 0.072      ; 0.845      ;
-; 0.602 ; count[25]    ; count[25] ; clock        ; clock       ; 0.000        ; 0.073      ; 0.846      ;
-; 0.602 ; count[23]    ; count[23] ; clock        ; clock       ; 0.000        ; 0.073      ; 0.846      ;
-; 0.603 ; count[20]    ; count[20] ; clock        ; clock       ; 0.000        ; 0.073      ; 0.847      ;
-; 0.603 ; count[30]    ; count[30] ; clock        ; clock       ; 0.000        ; 0.073      ; 0.847      ;
-; 0.604 ; count[24]    ; count[24] ; clock        ; clock       ; 0.000        ; 0.073      ; 0.848      ;
-; 0.604 ; count[26]    ; count[26] ; clock        ; clock       ; 0.000        ; 0.073      ; 0.848      ;
-; 0.604 ; count[28]    ; count[28] ; clock        ; clock       ; 0.000        ; 0.073      ; 0.848      ;
-; 0.606 ; count[16]    ; count[16] ; clock        ; clock       ; 0.000        ; 0.088      ; 0.865      ;
-; 0.607 ; count[28]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.468      ; 1.246      ;
-; 0.607 ; count[18]    ; count[18] ; clock        ; clock       ; 0.000        ; 0.088      ; 0.866      ;
-; 0.683 ; count[9]     ; count[10] ; clock        ; clock       ; 0.000        ; 0.471      ; 1.325      ;
-; 0.699 ; count[27]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.468      ; 1.338      ;
-; 0.717 ; count[26]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.468      ; 1.356      ;
-; 0.726 ; number[1]    ; number[1] ; clock        ; clock       ; 0.000        ; 0.088      ; 0.985      ;
-; 0.736 ; number[3]    ; number[3] ; clock        ; clock       ; 0.000        ; 0.088      ; 0.995      ;
-; 0.752 ; count[13]    ; count[16] ; clock        ; clock       ; 0.000        ; 0.471      ; 1.394      ;
-; 0.773 ; count[12]    ; count[16] ; clock        ; clock       ; 0.000        ; 0.471      ; 1.415      ;
-; 0.813 ; count[25]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.468      ; 1.452      ;
-; 0.823 ; increment[0] ; number[0] ; clock        ; clock       ; 0.000        ; 0.465      ; 1.459      ;
-; 0.824 ; count[13]    ; count[17] ; clock        ; clock       ; 0.000        ; 0.471      ; 1.466      ;
-; 0.827 ; count[24]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.468      ; 1.466      ;
-; 0.848 ; count[3]     ; count[4]  ; clock        ; clock       ; 0.000        ; 0.088      ; 1.107      ;
-; 0.852 ; count[1]     ; count[2]  ; clock        ; clock       ; 0.000        ; 0.088      ; 1.111      ;
-; 0.855 ; count[2]     ; count[3]  ; clock        ; clock       ; 0.000        ; 0.088      ; 1.114      ;
-; 0.855 ; count[0]     ; count[1]  ; clock        ; clock       ; 0.000        ; 0.088      ; 1.114      ;
-; 0.856 ; count[4]     ; count[5]  ; clock        ; clock       ; 0.000        ; 0.088      ; 1.115      ;
-; 0.860 ; increment[1] ; number[1] ; clock        ; clock       ; 0.000        ; 0.465      ; 1.496      ;
-; 0.862 ; count[13]    ; count[18] ; clock        ; clock       ; 0.000        ; 0.471      ; 1.504      ;
-; 0.863 ; count[12]    ; count[17] ; clock        ; clock       ; 0.000        ; 0.471      ; 1.505      ;
-; 0.866 ; count[2]     ; count[4]  ; clock        ; clock       ; 0.000        ; 0.088      ; 1.125      ;
-; 0.866 ; count[0]     ; count[2]  ; clock        ; clock       ; 0.000        ; 0.088      ; 1.125      ;
-; 0.867 ; count[4]     ; count[6]  ; clock        ; clock       ; 0.000        ; 0.088      ; 1.126      ;
-; 0.869 ; count[5]     ; count[6]  ; clock        ; clock       ; 0.000        ; 0.088      ; 1.128      ;
-; 0.872 ; count[17]    ; count[18] ; clock        ; clock       ; 0.000        ; 0.088      ; 1.131      ;
-; 0.875 ; number[6]    ; number[7] ; clock        ; clock       ; 0.000        ; 0.088      ; 1.134      ;
-; 0.878 ; number[5]    ; number[6] ; clock        ; clock       ; 0.000        ; 0.088      ; 1.137      ;
-; 0.883 ; count[6]     ; count[8]  ; clock        ; clock       ; 0.000        ; 0.088      ; 1.142      ;
-; 0.883 ; count[12]    ; count[18] ; clock        ; clock       ; 0.000        ; 0.471      ; 1.525      ;
-; 0.884 ; count[21]    ; count[22] ; clock        ; clock       ; 0.000        ; 0.073      ; 1.128      ;
-; 0.884 ; count[19]    ; count[20] ; clock        ; clock       ; 0.000        ; 0.073      ; 1.128      ;
-; 0.884 ; count[29]    ; count[30] ; clock        ; clock       ; 0.000        ; 0.073      ; 1.128      ;
-; 0.885 ; count[27]    ; count[28] ; clock        ; clock       ; 0.000        ; 0.073      ; 1.129      ;
-; 0.887 ; count[8]     ; count[10] ; clock        ; clock       ; 0.000        ; 0.088      ; 1.146      ;
-; 0.888 ; count[22]    ; count[23] ; clock        ; clock       ; 0.000        ; 0.073      ; 1.132      ;
-; 0.889 ; count[23]    ; count[24] ; clock        ; clock       ; 0.000        ; 0.073      ; 1.133      ;
-; 0.889 ; count[25]    ; count[26] ; clock        ; clock       ; 0.000        ; 0.073      ; 1.133      ;
-; 0.889 ; number[5]    ; number[7] ; clock        ; clock       ; 0.000        ; 0.088      ; 1.148      ;
-; 0.891 ; count[20]    ; count[21] ; clock        ; clock       ; 0.000        ; 0.073      ; 1.135      ;
-; 0.892 ; count[28]    ; count[29] ; clock        ; clock       ; 0.000        ; 0.073      ; 1.136      ;
-; 0.892 ; count[26]    ; count[27] ; clock        ; clock       ; 0.000        ; 0.073      ; 1.136      ;
-; 0.892 ; count[24]    ; count[25] ; clock        ; clock       ; 0.000        ; 0.073      ; 1.136      ;
-; 0.894 ; count[16]    ; count[17] ; clock        ; clock       ; 0.000        ; 0.088      ; 1.153      ;
-; 0.899 ; count[22]    ; count[24] ; clock        ; clock       ; 0.000        ; 0.073      ; 1.143      ;
-; 0.902 ; count[20]    ; count[22] ; clock        ; clock       ; 0.000        ; 0.073      ; 1.146      ;
-; 0.903 ; count[28]    ; count[30] ; clock        ; clock       ; 0.000        ; 0.073      ; 1.147      ;
-; 0.903 ; count[26]    ; count[28] ; clock        ; clock       ; 0.000        ; 0.073      ; 1.147      ;
-; 0.903 ; count[24]    ; count[26] ; clock        ; clock       ; 0.000        ; 0.073      ; 1.147      ;
-; 0.905 ; count[16]    ; count[18] ; clock        ; clock       ; 0.000        ; 0.088      ; 1.164      ;
-; 0.923 ; count[23]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.468      ; 1.562      ;
-; 0.931 ; count[7]     ; count[16] ; clock        ; clock       ; 0.000        ; 0.470      ; 1.572      ;
-; 0.933 ; count[22]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.468      ; 1.572      ;
-; 0.934 ; number[4]    ; number[4] ; clock        ; clock       ; 0.000        ; 0.088      ; 1.193      ;
-; 0.947 ; count[3]     ; count[5]  ; clock        ; clock       ; 0.000        ; 0.088      ; 1.206      ;
-; 0.951 ; count[1]     ; count[3]  ; clock        ; clock       ; 0.000        ; 0.088      ; 1.210      ;
-; 0.953 ; number[0]    ; number[0] ; clock        ; clock       ; 0.000        ; 0.088      ; 1.212      ;
-; 0.958 ; count[3]     ; count[6]  ; clock        ; clock       ; 0.000        ; 0.088      ; 1.217      ;
-; 0.962 ; count[1]     ; count[4]  ; clock        ; clock       ; 0.000        ; 0.088      ; 1.221      ;
-; 0.965 ; count[2]     ; count[5]  ; clock        ; clock       ; 0.000        ; 0.088      ; 1.224      ;
-; 0.965 ; count[0]     ; count[3]  ; clock        ; clock       ; 0.000        ; 0.088      ; 1.224      ;
-; 0.967 ; number[2]    ; number[2] ; clock        ; clock       ; 0.000        ; 0.088      ; 1.226      ;
-; 0.976 ; count[2]     ; count[6]  ; clock        ; clock       ; 0.000        ; 0.088      ; 1.235      ;
-; 0.976 ; count[0]     ; count[4]  ; clock        ; clock       ; 0.000        ; 0.088      ; 1.235      ;
-+-------+--------------+-----------+--------------+-------------+--------------+------------+------------+
++-----------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold: 'clock'                                                                  ;
++-------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node ; To Node   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+; 0.400 ; number[7] ; number[7] ; clock        ; clock       ; 0.000        ; 0.072      ; 0.643      ;
+; 0.561 ; count[3]  ; count[3]  ; clock        ; clock       ; 0.000        ; 0.089      ; 0.821      ;
+; 0.564 ; count[1]  ; count[1]  ; clock        ; clock       ; 0.000        ; 0.089      ; 0.824      ;
+; 0.566 ; count[2]  ; count[2]  ; clock        ; clock       ; 0.000        ; 0.089      ; 0.826      ;
+; 0.567 ; count[4]  ; count[4]  ; clock        ; clock       ; 0.000        ; 0.089      ; 0.827      ;
+; 0.582 ; count[5]  ; count[5]  ; clock        ; clock       ; 0.000        ; 0.089      ; 0.842      ;
+; 0.583 ; count[6]  ; count[6]  ; clock        ; clock       ; 0.000        ; 0.089      ; 0.843      ;
+; 0.587 ; count[0]  ; count[0]  ; clock        ; clock       ; 0.000        ; 0.089      ; 0.847      ;
+; 0.599 ; count[19] ; count[19] ; clock        ; clock       ; 0.000        ; 0.072      ; 0.842      ;
+; 0.599 ; count[21] ; count[21] ; clock        ; clock       ; 0.000        ; 0.072      ; 0.842      ;
+; 0.599 ; count[29] ; count[29] ; clock        ; clock       ; 0.000        ; 0.072      ; 0.842      ;
+; 0.600 ; number[2] ; number[2] ; clock        ; clock       ; 0.000        ; 0.072      ; 0.843      ;
+; 0.600 ; count[31] ; count[31] ; clock        ; clock       ; 0.000        ; 0.072      ; 0.843      ;
+; 0.600 ; count[27] ; count[27] ; clock        ; clock       ; 0.000        ; 0.072      ; 0.843      ;
+; 0.601 ; number[3] ; number[3] ; clock        ; clock       ; 0.000        ; 0.072      ; 0.844      ;
+; 0.601 ; count[17] ; count[17] ; clock        ; clock       ; 0.000        ; 0.072      ; 0.844      ;
+; 0.601 ; count[22] ; count[22] ; clock        ; clock       ; 0.000        ; 0.072      ; 0.844      ;
+; 0.602 ; count[7]  ; count[7]  ; clock        ; clock       ; 0.000        ; 0.072      ; 0.845      ;
+; 0.603 ; count[23] ; count[23] ; clock        ; clock       ; 0.000        ; 0.072      ; 0.846      ;
+; 0.603 ; count[25] ; count[25] ; clock        ; clock       ; 0.000        ; 0.072      ; 0.846      ;
+; 0.604 ; count[8]  ; count[8]  ; clock        ; clock       ; 0.000        ; 0.072      ; 0.847      ;
+; 0.604 ; count[10] ; count[10] ; clock        ; clock       ; 0.000        ; 0.072      ; 0.847      ;
+; 0.604 ; count[20] ; count[20] ; clock        ; clock       ; 0.000        ; 0.072      ; 0.847      ;
+; 0.604 ; count[30] ; count[30] ; clock        ; clock       ; 0.000        ; 0.072      ; 0.847      ;
+; 0.605 ; count[24] ; count[24] ; clock        ; clock       ; 0.000        ; 0.072      ; 0.848      ;
+; 0.605 ; count[26] ; count[26] ; clock        ; clock       ; 0.000        ; 0.072      ; 0.848      ;
+; 0.605 ; count[28] ; count[28] ; clock        ; clock       ; 0.000        ; 0.072      ; 0.848      ;
+; 0.622 ; count[16] ; count[16] ; clock        ; clock       ; 0.000        ; 0.072      ; 0.865      ;
+; 0.623 ; count[18] ; count[18] ; clock        ; clock       ; 0.000        ; 0.072      ; 0.866      ;
+; 0.847 ; count[3]  ; count[4]  ; clock        ; clock       ; 0.000        ; 0.089      ; 1.107      ;
+; 0.851 ; count[1]  ; count[2]  ; clock        ; clock       ; 0.000        ; 0.089      ; 1.111      ;
+; 0.854 ; count[2]  ; count[3]  ; clock        ; clock       ; 0.000        ; 0.089      ; 1.114      ;
+; 0.854 ; count[0]  ; count[1]  ; clock        ; clock       ; 0.000        ; 0.089      ; 1.114      ;
+; 0.855 ; count[4]  ; count[5]  ; clock        ; clock       ; 0.000        ; 0.089      ; 1.115      ;
+; 0.865 ; count[2]  ; count[4]  ; clock        ; clock       ; 0.000        ; 0.089      ; 1.125      ;
+; 0.865 ; count[0]  ; count[2]  ; clock        ; clock       ; 0.000        ; 0.089      ; 1.125      ;
+; 0.866 ; count[4]  ; count[6]  ; clock        ; clock       ; 0.000        ; 0.089      ; 1.126      ;
+; 0.868 ; count[5]  ; count[6]  ; clock        ; clock       ; 0.000        ; 0.089      ; 1.128      ;
+; 0.885 ; count[21] ; count[22] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.128      ;
+; 0.885 ; count[19] ; count[20] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.128      ;
+; 0.885 ; count[29] ; count[30] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.128      ;
+; 0.886 ; number[2] ; number[3] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.129      ;
+; 0.886 ; count[27] ; count[28] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.129      ;
+; 0.888 ; count[17] ; count[18] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.131      ;
+; 0.889 ; number[3] ; number[4] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.132      ;
+; 0.889 ; count[7]  ; count[8]  ; clock        ; clock       ; 0.000        ; 0.072      ; 1.132      ;
+; 0.889 ; count[22] ; count[23] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.132      ;
+; 0.890 ; count[23] ; count[24] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.133      ;
+; 0.890 ; count[25] ; count[26] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.133      ;
+; 0.892 ; count[20] ; count[21] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.135      ;
+; 0.892 ; count[30] ; count[31] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.135      ;
+; 0.893 ; count[28] ; count[29] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.136      ;
+; 0.893 ; count[26] ; count[27] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.136      ;
+; 0.893 ; count[24] ; count[25] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.136      ;
+; 0.900 ; number[3] ; number[5] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.143      ;
+; 0.900 ; count[22] ; count[24] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.143      ;
+; 0.903 ; count[8]  ; count[10] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.146      ;
+; 0.903 ; count[20] ; count[22] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.146      ;
+; 0.904 ; count[28] ; count[30] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.147      ;
+; 0.904 ; count[26] ; count[28] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.147      ;
+; 0.904 ; count[24] ; count[26] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.147      ;
+; 0.910 ; count[16] ; count[17] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.153      ;
+; 0.911 ; count[18] ; count[19] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.154      ;
+; 0.920 ; number[1] ; number[1] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.163      ;
+; 0.921 ; count[16] ; count[18] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.164      ;
+; 0.922 ; count[18] ; count[20] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.165      ;
+; 0.946 ; number[0] ; number[0] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.189      ;
+; 0.946 ; count[3]  ; count[5]  ; clock        ; clock       ; 0.000        ; 0.089      ; 1.206      ;
+; 0.950 ; count[1]  ; count[3]  ; clock        ; clock       ; 0.000        ; 0.089      ; 1.210      ;
+; 0.952 ; number[5] ; number[5] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.195      ;
+; 0.957 ; count[3]  ; count[6]  ; clock        ; clock       ; 0.000        ; 0.089      ; 1.217      ;
+; 0.961 ; count[1]  ; count[4]  ; clock        ; clock       ; 0.000        ; 0.089      ; 1.221      ;
+; 0.964 ; count[2]  ; count[5]  ; clock        ; clock       ; 0.000        ; 0.089      ; 1.224      ;
+; 0.964 ; count[0]  ; count[3]  ; clock        ; clock       ; 0.000        ; 0.089      ; 1.224      ;
+; 0.975 ; count[2]  ; count[6]  ; clock        ; clock       ; 0.000        ; 0.089      ; 1.235      ;
+; 0.975 ; count[0]  ; count[4]  ; clock        ; clock       ; 0.000        ; 0.089      ; 1.235      ;
+; 0.984 ; count[21] ; count[23] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.227      ;
+; 0.984 ; count[19] ; count[21] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.227      ;
+; 0.984 ; count[29] ; count[31] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.227      ;
+; 0.985 ; number[2] ; number[4] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.228      ;
+; 0.985 ; count[27] ; count[29] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.228      ;
+; 0.987 ; count[17] ; count[19] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.230      ;
+; 0.989 ; count[25] ; count[27] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.232      ;
+; 0.989 ; count[23] ; count[25] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.232      ;
+; 0.995 ; count[21] ; count[24] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.238      ;
+; 0.995 ; count[19] ; count[22] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.238      ;
+; 0.996 ; number[2] ; number[5] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.239      ;
+; 0.996 ; count[27] ; count[30] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.239      ;
+; 0.998 ; count[17] ; count[20] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.241      ;
+; 0.999 ; number[3] ; number[6] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.242      ;
+; 0.999 ; count[7]  ; count[10] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.242      ;
+; 0.999 ; count[22] ; count[25] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.242      ;
+; 1.000 ; count[25] ; count[28] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.243      ;
+; 1.000 ; count[23] ; count[26] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.243      ;
+; 1.002 ; count[20] ; count[23] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.245      ;
+; 1.003 ; count[28] ; count[31] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.246      ;
+; 1.003 ; count[26] ; count[29] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.246      ;
+; 1.003 ; count[24] ; count[27] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.246      ;
+; 1.010 ; number[3] ; number[7] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.253      ;
+; 1.010 ; count[22] ; count[26] ; clock        ; clock       ; 0.000        ; 0.072      ; 1.253      ;
++-------+-----------+-----------+--------------+-------------+--------------+------------+------------+
 
 
 ----------------------------------------------
@@ -669,7 +669,7 @@ No synchronizer chains to report.
 +-------+--------+-------------------+
 ; Clock ; Slack  ; End Point TNS     ;
 +-------+--------+-------------------+
-; clock ; -1.199 ; -41.528           ;
+; clock ; -1.188 ; -41.284           ;
 +-------+--------+-------------------+
 
 
@@ -678,7 +678,7 @@ No synchronizer chains to report.
 +-------+-------+-------------------+
 ; Clock ; Slack ; End Point TNS     ;
 +-------+-------+-------------------+
-; clock ; 0.241 ; 0.000             ;
+; clock ; 0.200 ; 0.000             ;
 +-------+-------+-------------------+
 
 
@@ -699,7 +699,7 @@ No paths to report.
 +-------+--------+---------------------------------+
 ; Clock ; Slack  ; End Point TNS                   ;
 +-------+--------+---------------------------------+
-; clock ; -3.000 ; -48.138                         ;
+; clock ; -3.000 ; -47.733                         ;
 +-------+--------+---------------------------------+
 
 
@@ -708,215 +708,215 @@ No paths to report.
 +--------+-----------+-----------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node ; To Node   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-----------+-----------+--------------+-------------+--------------+------------+------------+
-; -1.199 ; count[26] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.044     ; 2.142      ;
-; -1.199 ; count[26] ; count[15] ; clock        ; clock       ; 1.000        ; -0.044     ; 2.142      ;
-; -1.193 ; count[29] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.044     ; 2.136      ;
-; -1.193 ; count[29] ; count[15] ; clock        ; clock       ; 1.000        ; -0.044     ; 2.136      ;
-; -1.191 ; count[28] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.044     ; 2.134      ;
-; -1.191 ; count[28] ; count[15] ; clock        ; clock       ; 1.000        ; -0.044     ; 2.134      ;
-; -1.164 ; count[10] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.245     ; 1.906      ;
-; -1.164 ; count[10] ; count[15] ; clock        ; clock       ; 1.000        ; -0.245     ; 1.906      ;
-; -1.142 ; count[8]  ; count[7]  ; clock        ; clock       ; 1.000        ; -0.245     ; 1.884      ;
-; -1.142 ; count[8]  ; count[15] ; clock        ; clock       ; 1.000        ; -0.245     ; 1.884      ;
-; -1.124 ; count[18] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.247     ; 1.864      ;
-; -1.124 ; count[18] ; count[15] ; clock        ; clock       ; 1.000        ; -0.247     ; 1.864      ;
-; -1.089 ; count[26] ; count[22] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.034      ;
-; -1.089 ; count[26] ; count[19] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.034      ;
-; -1.089 ; count[26] ; count[20] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.034      ;
-; -1.089 ; count[26] ; count[21] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.034      ;
-; -1.089 ; count[26] ; count[25] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.034      ;
-; -1.089 ; count[26] ; count[23] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.034      ;
-; -1.089 ; count[26] ; count[24] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.034      ;
-; -1.089 ; count[26] ; count[27] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.034      ;
-; -1.089 ; count[26] ; count[26] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.034      ;
-; -1.089 ; count[26] ; count[28] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.034      ;
-; -1.089 ; count[26] ; count[29] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.034      ;
-; -1.089 ; count[26] ; count[30] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.034      ;
-; -1.086 ; count[26] ; count[9]  ; clock        ; clock       ; 1.000        ; -0.044     ; 2.029      ;
-; -1.086 ; count[26] ; count[12] ; clock        ; clock       ; 1.000        ; -0.044     ; 2.029      ;
-; -1.086 ; count[26] ; count[13] ; clock        ; clock       ; 1.000        ; -0.044     ; 2.029      ;
-; -1.083 ; count[29] ; count[22] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.028      ;
-; -1.083 ; count[29] ; count[19] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.028      ;
-; -1.083 ; count[29] ; count[20] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.028      ;
-; -1.083 ; count[29] ; count[21] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.028      ;
-; -1.083 ; count[29] ; count[25] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.028      ;
-; -1.083 ; count[29] ; count[23] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.028      ;
-; -1.083 ; count[29] ; count[24] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.028      ;
-; -1.083 ; count[29] ; count[27] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.028      ;
-; -1.083 ; count[29] ; count[26] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.028      ;
-; -1.083 ; count[29] ; count[28] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.028      ;
-; -1.083 ; count[29] ; count[29] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.028      ;
-; -1.083 ; count[29] ; count[30] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.028      ;
-; -1.081 ; count[28] ; count[22] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.026      ;
-; -1.081 ; count[28] ; count[19] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.026      ;
-; -1.081 ; count[28] ; count[20] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.026      ;
-; -1.081 ; count[28] ; count[21] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.026      ;
-; -1.081 ; count[28] ; count[25] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.026      ;
-; -1.081 ; count[28] ; count[23] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.026      ;
-; -1.081 ; count[28] ; count[24] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.026      ;
-; -1.081 ; count[28] ; count[27] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.026      ;
-; -1.081 ; count[28] ; count[26] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.026      ;
-; -1.081 ; count[28] ; count[28] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.026      ;
-; -1.081 ; count[28] ; count[29] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.026      ;
-; -1.081 ; count[28] ; count[30] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.026      ;
-; -1.080 ; count[29] ; count[9]  ; clock        ; clock       ; 1.000        ; -0.044     ; 2.023      ;
-; -1.080 ; count[29] ; count[12] ; clock        ; clock       ; 1.000        ; -0.044     ; 2.023      ;
-; -1.080 ; count[29] ; count[13] ; clock        ; clock       ; 1.000        ; -0.044     ; 2.023      ;
-; -1.078 ; count[28] ; count[9]  ; clock        ; clock       ; 1.000        ; -0.044     ; 2.021      ;
-; -1.078 ; count[28] ; count[12] ; clock        ; clock       ; 1.000        ; -0.044     ; 2.021      ;
-; -1.078 ; count[28] ; count[13] ; clock        ; clock       ; 1.000        ; -0.044     ; 2.021      ;
-; -1.063 ; count[5]  ; count[7]  ; clock        ; clock       ; 1.000        ; -0.245     ; 1.805      ;
-; -1.063 ; count[5]  ; count[15] ; clock        ; clock       ; 1.000        ; -0.245     ; 1.805      ;
-; -1.059 ; count[31] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.247     ; 1.799      ;
-; -1.059 ; count[31] ; count[15] ; clock        ; clock       ; 1.000        ; -0.247     ; 1.799      ;
-; -1.054 ; count[10] ; count[22] ; clock        ; clock       ; 1.000        ; -0.243     ; 1.798      ;
-; -1.054 ; count[10] ; count[19] ; clock        ; clock       ; 1.000        ; -0.243     ; 1.798      ;
-; -1.054 ; count[10] ; count[20] ; clock        ; clock       ; 1.000        ; -0.243     ; 1.798      ;
-; -1.054 ; count[10] ; count[21] ; clock        ; clock       ; 1.000        ; -0.243     ; 1.798      ;
-; -1.054 ; count[10] ; count[25] ; clock        ; clock       ; 1.000        ; -0.243     ; 1.798      ;
-; -1.054 ; count[10] ; count[23] ; clock        ; clock       ; 1.000        ; -0.243     ; 1.798      ;
-; -1.054 ; count[10] ; count[24] ; clock        ; clock       ; 1.000        ; -0.243     ; 1.798      ;
-; -1.054 ; count[10] ; count[27] ; clock        ; clock       ; 1.000        ; -0.243     ; 1.798      ;
-; -1.054 ; count[10] ; count[26] ; clock        ; clock       ; 1.000        ; -0.243     ; 1.798      ;
-; -1.054 ; count[10] ; count[28] ; clock        ; clock       ; 1.000        ; -0.243     ; 1.798      ;
-; -1.054 ; count[10] ; count[29] ; clock        ; clock       ; 1.000        ; -0.243     ; 1.798      ;
-; -1.054 ; count[10] ; count[30] ; clock        ; clock       ; 1.000        ; -0.243     ; 1.798      ;
-; -1.052 ; count[17] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.247     ; 1.792      ;
-; -1.052 ; count[17] ; count[15] ; clock        ; clock       ; 1.000        ; -0.247     ; 1.792      ;
-; -1.051 ; count[26] ; number[7] ; clock        ; clock       ; 1.000        ; 0.152      ; 2.190      ;
-; -1.051 ; count[26] ; number[6] ; clock        ; clock       ; 1.000        ; 0.152      ; 2.190      ;
-; -1.051 ; count[26] ; number[5] ; clock        ; clock       ; 1.000        ; 0.152      ; 2.190      ;
-; -1.051 ; count[26] ; number[4] ; clock        ; clock       ; 1.000        ; 0.152      ; 2.190      ;
-; -1.051 ; count[26] ; number[3] ; clock        ; clock       ; 1.000        ; 0.152      ; 2.190      ;
-; -1.051 ; count[26] ; number[2] ; clock        ; clock       ; 1.000        ; 0.152      ; 2.190      ;
-; -1.051 ; count[26] ; number[1] ; clock        ; clock       ; 1.000        ; 0.152      ; 2.190      ;
-; -1.051 ; count[26] ; number[0] ; clock        ; clock       ; 1.000        ; 0.152      ; 2.190      ;
-; -1.051 ; count[10] ; count[9]  ; clock        ; clock       ; 1.000        ; -0.245     ; 1.793      ;
-; -1.051 ; count[10] ; count[12] ; clock        ; clock       ; 1.000        ; -0.245     ; 1.793      ;
-; -1.051 ; count[10] ; count[13] ; clock        ; clock       ; 1.000        ; -0.245     ; 1.793      ;
-; -1.046 ; count[22] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.044     ; 1.989      ;
-; -1.046 ; count[22] ; count[15] ; clock        ; clock       ; 1.000        ; -0.044     ; 1.989      ;
-; -1.045 ; count[29] ; number[7] ; clock        ; clock       ; 1.000        ; 0.152      ; 2.184      ;
-; -1.045 ; count[29] ; number[6] ; clock        ; clock       ; 1.000        ; 0.152      ; 2.184      ;
-; -1.045 ; count[29] ; number[5] ; clock        ; clock       ; 1.000        ; 0.152      ; 2.184      ;
-; -1.045 ; count[29] ; number[4] ; clock        ; clock       ; 1.000        ; 0.152      ; 2.184      ;
-; -1.045 ; count[29] ; number[3] ; clock        ; clock       ; 1.000        ; 0.152      ; 2.184      ;
-; -1.045 ; count[29] ; number[2] ; clock        ; clock       ; 1.000        ; 0.152      ; 2.184      ;
-; -1.045 ; count[29] ; number[1] ; clock        ; clock       ; 1.000        ; 0.152      ; 2.184      ;
-; -1.045 ; count[29] ; number[0] ; clock        ; clock       ; 1.000        ; 0.152      ; 2.184      ;
-; -1.043 ; count[28] ; number[7] ; clock        ; clock       ; 1.000        ; 0.152      ; 2.182      ;
-; -1.043 ; count[28] ; number[6] ; clock        ; clock       ; 1.000        ; 0.152      ; 2.182      ;
-; -1.043 ; count[28] ; number[5] ; clock        ; clock       ; 1.000        ; 0.152      ; 2.182      ;
-; -1.043 ; count[28] ; number[4] ; clock        ; clock       ; 1.000        ; 0.152      ; 2.182      ;
+; -1.188 ; count[25] ; number[7] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.133      ;
+; -1.188 ; count[25] ; number[6] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.133      ;
+; -1.188 ; count[25] ; number[5] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.133      ;
+; -1.188 ; count[25] ; number[4] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.133      ;
+; -1.188 ; count[25] ; number[3] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.133      ;
+; -1.188 ; count[25] ; number[2] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.133      ;
+; -1.188 ; count[25] ; number[1] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.133      ;
+; -1.188 ; count[25] ; number[0] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.133      ;
+; -1.168 ; count[12] ; number[7] ; clock        ; clock       ; 1.000        ; -0.039     ; 2.116      ;
+; -1.168 ; count[12] ; number[6] ; clock        ; clock       ; 1.000        ; -0.039     ; 2.116      ;
+; -1.168 ; count[12] ; number[5] ; clock        ; clock       ; 1.000        ; -0.039     ; 2.116      ;
+; -1.168 ; count[12] ; number[4] ; clock        ; clock       ; 1.000        ; -0.039     ; 2.116      ;
+; -1.168 ; count[12] ; number[3] ; clock        ; clock       ; 1.000        ; -0.039     ; 2.116      ;
+; -1.168 ; count[12] ; number[2] ; clock        ; clock       ; 1.000        ; -0.039     ; 2.116      ;
+; -1.168 ; count[12] ; number[1] ; clock        ; clock       ; 1.000        ; -0.039     ; 2.116      ;
+; -1.168 ; count[12] ; number[0] ; clock        ; clock       ; 1.000        ; -0.039     ; 2.116      ;
+; -1.158 ; count[19] ; number[7] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.103      ;
+; -1.158 ; count[19] ; number[6] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.103      ;
+; -1.158 ; count[19] ; number[5] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.103      ;
+; -1.158 ; count[19] ; number[4] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.103      ;
+; -1.158 ; count[19] ; number[3] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.103      ;
+; -1.158 ; count[19] ; number[2] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.103      ;
+; -1.158 ; count[19] ; number[1] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.103      ;
+; -1.158 ; count[19] ; number[0] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.103      ;
+; -1.157 ; count[20] ; number[7] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.102      ;
+; -1.157 ; count[20] ; number[6] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.102      ;
+; -1.157 ; count[20] ; number[5] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.102      ;
+; -1.157 ; count[20] ; number[4] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.102      ;
+; -1.157 ; count[20] ; number[3] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.102      ;
+; -1.157 ; count[20] ; number[2] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.102      ;
+; -1.157 ; count[20] ; number[1] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.102      ;
+; -1.157 ; count[20] ; number[0] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.102      ;
+; -1.153 ; count[29] ; number[7] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.098      ;
+; -1.153 ; count[29] ; number[6] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.098      ;
+; -1.153 ; count[29] ; number[5] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.098      ;
+; -1.153 ; count[29] ; number[4] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.098      ;
+; -1.153 ; count[29] ; number[3] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.098      ;
+; -1.153 ; count[29] ; number[2] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.098      ;
+; -1.153 ; count[29] ; number[1] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.098      ;
+; -1.153 ; count[29] ; number[0] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.098      ;
+; -1.149 ; count[21] ; number[7] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.094      ;
+; -1.149 ; count[21] ; number[6] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.094      ;
+; -1.149 ; count[21] ; number[5] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.094      ;
+; -1.149 ; count[21] ; number[4] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.094      ;
+; -1.149 ; count[21] ; number[3] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.094      ;
+; -1.149 ; count[21] ; number[2] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.094      ;
+; -1.149 ; count[21] ; number[1] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.094      ;
+; -1.149 ; count[21] ; number[0] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.094      ;
+; -1.145 ; count[26] ; number[7] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.090      ;
+; -1.145 ; count[26] ; number[6] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.090      ;
+; -1.145 ; count[26] ; number[5] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.090      ;
+; -1.145 ; count[26] ; number[4] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.090      ;
+; -1.145 ; count[26] ; number[3] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.090      ;
+; -1.145 ; count[26] ; number[2] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.090      ;
+; -1.145 ; count[26] ; number[1] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.090      ;
+; -1.145 ; count[26] ; number[0] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.090      ;
+; -1.136 ; count[15] ; number[7] ; clock        ; clock       ; 1.000        ; -0.041     ; 2.082      ;
+; -1.136 ; count[15] ; number[6] ; clock        ; clock       ; 1.000        ; -0.041     ; 2.082      ;
+; -1.136 ; count[15] ; number[5] ; clock        ; clock       ; 1.000        ; -0.041     ; 2.082      ;
+; -1.136 ; count[15] ; number[4] ; clock        ; clock       ; 1.000        ; -0.041     ; 2.082      ;
+; -1.136 ; count[15] ; number[3] ; clock        ; clock       ; 1.000        ; -0.041     ; 2.082      ;
+; -1.136 ; count[15] ; number[2] ; clock        ; clock       ; 1.000        ; -0.041     ; 2.082      ;
+; -1.136 ; count[15] ; number[1] ; clock        ; clock       ; 1.000        ; -0.041     ; 2.082      ;
+; -1.136 ; count[15] ; number[0] ; clock        ; clock       ; 1.000        ; -0.041     ; 2.082      ;
+; -1.135 ; count[25] ; count[12] ; clock        ; clock       ; 1.000        ; -0.045     ; 2.077      ;
+; -1.135 ; count[25] ; count[9]  ; clock        ; clock       ; 1.000        ; -0.045     ; 2.077      ;
+; -1.135 ; count[25] ; count[11] ; clock        ; clock       ; 1.000        ; -0.045     ; 2.077      ;
+; -1.135 ; count[25] ; count[13] ; clock        ; clock       ; 1.000        ; -0.045     ; 2.077      ;
+; -1.118 ; count[28] ; number[7] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.063      ;
+; -1.118 ; count[28] ; number[6] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.063      ;
+; -1.118 ; count[28] ; number[5] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.063      ;
+; -1.118 ; count[28] ; number[4] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.063      ;
+; -1.118 ; count[28] ; number[3] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.063      ;
+; -1.118 ; count[28] ; number[2] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.063      ;
+; -1.118 ; count[28] ; number[1] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.063      ;
+; -1.118 ; count[28] ; number[0] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.063      ;
+; -1.116 ; count[25] ; count[7]  ; clock        ; clock       ; 1.000        ; -0.044     ; 2.059      ;
+; -1.116 ; count[25] ; count[8]  ; clock        ; clock       ; 1.000        ; -0.044     ; 2.059      ;
+; -1.116 ; count[25] ; count[10] ; clock        ; clock       ; 1.000        ; -0.044     ; 2.059      ;
+; -1.115 ; count[12] ; count[12] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.060      ;
+; -1.115 ; count[12] ; count[9]  ; clock        ; clock       ; 1.000        ; -0.042     ; 2.060      ;
+; -1.115 ; count[12] ; count[11] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.060      ;
+; -1.115 ; count[12] ; count[13] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.060      ;
+; -1.109 ; count[10] ; number[7] ; clock        ; clock       ; 1.000        ; -0.040     ; 2.056      ;
+; -1.109 ; count[10] ; number[6] ; clock        ; clock       ; 1.000        ; -0.040     ; 2.056      ;
+; -1.109 ; count[10] ; number[5] ; clock        ; clock       ; 1.000        ; -0.040     ; 2.056      ;
+; -1.109 ; count[10] ; number[4] ; clock        ; clock       ; 1.000        ; -0.040     ; 2.056      ;
+; -1.109 ; count[10] ; number[3] ; clock        ; clock       ; 1.000        ; -0.040     ; 2.056      ;
+; -1.109 ; count[10] ; number[2] ; clock        ; clock       ; 1.000        ; -0.040     ; 2.056      ;
+; -1.109 ; count[10] ; number[1] ; clock        ; clock       ; 1.000        ; -0.040     ; 2.056      ;
+; -1.109 ; count[10] ; number[0] ; clock        ; clock       ; 1.000        ; -0.040     ; 2.056      ;
+; -1.109 ; count[17] ; number[7] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.054      ;
+; -1.109 ; count[17] ; number[6] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.054      ;
+; -1.109 ; count[17] ; number[5] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.054      ;
+; -1.109 ; count[17] ; number[4] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.054      ;
+; -1.109 ; count[17] ; number[3] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.054      ;
+; -1.109 ; count[17] ; number[2] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.054      ;
+; -1.109 ; count[17] ; number[1] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.054      ;
+; -1.109 ; count[17] ; number[0] ; clock        ; clock       ; 1.000        ; -0.042     ; 2.054      ;
+; -1.107 ; count[5]  ; number[7] ; clock        ; clock       ; 1.000        ; -0.242     ; 1.852      ;
 +--------+-----------+-----------+--------------+-------------+--------------+------------+------------+
 
 
-+--------------------------------------------------------------------------------------------------------+
-; Fast 1200mV 0C Model Hold: 'clock'                                                                     ;
-+-------+--------------+-----------+--------------+-------------+--------------+------------+------------+
-; Slack ; From Node    ; To Node   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+-------+--------------+-----------+--------------+-------------+--------------+------------+------------+
-; 0.241 ; count[15]    ; count[16] ; clock        ; clock       ; 0.000        ; 0.247      ; 0.572      ;
-; 0.245 ; count[7]     ; count[8]  ; clock        ; clock       ; 0.000        ; 0.245      ; 0.574      ;
-; 0.256 ; count[30]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.245      ; 0.585      ;
-; 0.279 ; count[1]     ; count[1]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.413      ;
-; 0.279 ; count[3]     ; count[3]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.413      ;
-; 0.281 ; count[2]     ; count[2]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.415      ;
-; 0.281 ; count[4]     ; count[4]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.415      ;
-; 0.290 ; count[5]     ; count[5]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.424      ;
-; 0.290 ; count[31]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.050      ; 0.424      ;
-; 0.291 ; count[0]     ; count[0]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.425      ;
-; 0.291 ; count[6]     ; count[6]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.425      ;
-; 0.291 ; count[17]    ; count[17] ; clock        ; clock       ; 0.000        ; 0.050      ; 0.425      ;
-; 0.292 ; count[8]     ; count[8]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.426      ;
-; 0.293 ; number[6]    ; number[6] ; clock        ; clock       ; 0.000        ; 0.050      ; 0.427      ;
-; 0.293 ; number[5]    ; number[5] ; clock        ; clock       ; 0.000        ; 0.050      ; 0.427      ;
-; 0.293 ; count[10]    ; count[10] ; clock        ; clock       ; 0.000        ; 0.050      ; 0.427      ;
-; 0.294 ; number[7]    ; number[7] ; clock        ; clock       ; 0.000        ; 0.050      ; 0.428      ;
-; 0.297 ; count[15]    ; count[15] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.423      ;
-; 0.299 ; count[7]     ; count[7]  ; clock        ; clock       ; 0.000        ; 0.042      ; 0.425      ;
-; 0.299 ; count[19]    ; count[19] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.425      ;
-; 0.299 ; count[21]    ; count[21] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.425      ;
-; 0.299 ; count[27]    ; count[27] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.425      ;
-; 0.299 ; count[29]    ; count[29] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.425      ;
-; 0.300 ; count[22]    ; count[22] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.426      ;
-; 0.300 ; count[25]    ; count[25] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.426      ;
-; 0.300 ; count[23]    ; count[23] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.426      ;
-; 0.301 ; count[20]    ; count[20] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.427      ;
-; 0.301 ; count[24]    ; count[24] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.427      ;
-; 0.301 ; count[30]    ; count[30] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.427      ;
-; 0.302 ; count[26]    ; count[26] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.428      ;
-; 0.302 ; count[28]    ; count[28] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.428      ;
-; 0.303 ; count[16]    ; count[16] ; clock        ; clock       ; 0.000        ; 0.050      ; 0.437      ;
-; 0.304 ; count[18]    ; count[18] ; clock        ; clock       ; 0.000        ; 0.050      ; 0.438      ;
-; 0.304 ; count[15]    ; count[17] ; clock        ; clock       ; 0.000        ; 0.247      ; 0.635      ;
-; 0.307 ; count[15]    ; count[18] ; clock        ; clock       ; 0.000        ; 0.247      ; 0.638      ;
-; 0.308 ; count[29]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.245      ; 0.637      ;
-; 0.311 ; count[7]     ; count[10] ; clock        ; clock       ; 0.000        ; 0.245      ; 0.640      ;
-; 0.323 ; count[28]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.245      ; 0.652      ;
-; 0.326 ; count[9]     ; count[10] ; clock        ; clock       ; 0.000        ; 0.245      ; 0.655      ;
-; 0.352 ; number[1]    ; number[1] ; clock        ; clock       ; 0.000        ; 0.050      ; 0.486      ;
-; 0.355 ; number[3]    ; number[3] ; clock        ; clock       ; 0.000        ; 0.050      ; 0.489      ;
-; 0.374 ; count[13]    ; count[16] ; clock        ; clock       ; 0.000        ; 0.247      ; 0.705      ;
-; 0.374 ; count[27]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.245      ; 0.703      ;
-; 0.389 ; count[12]    ; count[16] ; clock        ; clock       ; 0.000        ; 0.247      ; 0.720      ;
-; 0.389 ; count[26]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.245      ; 0.718      ;
-; 0.421 ; increment[0] ; number[0] ; clock        ; clock       ; 0.000        ; 0.243      ; 0.748      ;
-; 0.428 ; count[1]     ; count[2]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.562      ;
-; 0.428 ; count[3]     ; count[4]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.562      ;
-; 0.437 ; count[13]    ; count[17] ; clock        ; clock       ; 0.000        ; 0.247      ; 0.768      ;
-; 0.438 ; count[0]     ; count[1]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.572      ;
-; 0.439 ; count[2]     ; count[3]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.573      ;
-; 0.439 ; count[4]     ; count[5]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.573      ;
-; 0.439 ; count[5]     ; count[6]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.573      ;
-; 0.440 ; count[17]    ; count[18] ; clock        ; clock       ; 0.000        ; 0.050      ; 0.574      ;
-; 0.440 ; count[13]    ; count[18] ; clock        ; clock       ; 0.000        ; 0.247      ; 0.771      ;
-; 0.440 ; increment[1] ; number[1] ; clock        ; clock       ; 0.000        ; 0.243      ; 0.767      ;
-; 0.441 ; count[25]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.245      ; 0.770      ;
-; 0.441 ; count[0]     ; count[2]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.575      ;
-; 0.442 ; number[6]    ; number[7] ; clock        ; clock       ; 0.000        ; 0.050      ; 0.576      ;
-; 0.442 ; count[2]     ; count[4]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.576      ;
-; 0.442 ; count[4]     ; count[6]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.576      ;
-; 0.448 ; count[21]    ; count[22] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.574      ;
-; 0.448 ; count[19]    ; count[20] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.574      ;
-; 0.448 ; count[29]    ; count[30] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.574      ;
-; 0.448 ; count[27]    ; count[28] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.574      ;
-; 0.449 ; count[23]    ; count[24] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.575      ;
-; 0.449 ; count[25]    ; count[26] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.575      ;
-; 0.451 ; number[5]    ; number[6] ; clock        ; clock       ; 0.000        ; 0.050      ; 0.585      ;
-; 0.452 ; count[6]     ; count[8]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.586      ;
-; 0.452 ; count[12]    ; count[17] ; clock        ; clock       ; 0.000        ; 0.247      ; 0.783      ;
-; 0.453 ; count[8]     ; count[10] ; clock        ; clock       ; 0.000        ; 0.050      ; 0.587      ;
-; 0.454 ; count[24]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.245      ; 0.783      ;
-; 0.454 ; number[5]    ; number[7] ; clock        ; clock       ; 0.000        ; 0.050      ; 0.588      ;
-; 0.455 ; count[12]    ; count[18] ; clock        ; clock       ; 0.000        ; 0.247      ; 0.786      ;
-; 0.456 ; number[4]    ; number[4] ; clock        ; clock       ; 0.000        ; 0.050      ; 0.590      ;
-; 0.458 ; count[22]    ; count[23] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.584      ;
-; 0.459 ; count[20]    ; count[21] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.585      ;
-; 0.459 ; count[24]    ; count[25] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.585      ;
-; 0.460 ; count[26]    ; count[27] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.586      ;
-; 0.460 ; count[28]    ; count[29] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.586      ;
-; 0.461 ; count[16]    ; count[17] ; clock        ; clock       ; 0.000        ; 0.050      ; 0.595      ;
-; 0.461 ; count[22]    ; count[24] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.587      ;
-; 0.462 ; count[20]    ; count[22] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.588      ;
-; 0.462 ; count[24]    ; count[26] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.588      ;
-; 0.463 ; count[28]    ; count[30] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.589      ;
-; 0.463 ; count[26]    ; count[28] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.589      ;
-; 0.464 ; count[16]    ; count[18] ; clock        ; clock       ; 0.000        ; 0.050      ; 0.598      ;
-; 0.465 ; number[0]    ; number[0] ; clock        ; clock       ; 0.000        ; 0.050      ; 0.599      ;
-; 0.477 ; number[2]    ; number[2] ; clock        ; clock       ; 0.000        ; 0.050      ; 0.611      ;
-; 0.491 ; count[1]     ; count[3]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.625      ;
-; 0.491 ; count[3]     ; count[5]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.625      ;
-; 0.494 ; count[1]     ; count[4]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.628      ;
-; 0.494 ; count[3]     ; count[6]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.628      ;
-; 0.504 ; count[0]     ; count[3]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.638      ;
-; 0.505 ; count[5]     ; count[8]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.639      ;
-; 0.505 ; count[2]     ; count[5]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.639      ;
-; 0.507 ; count[7]     ; count[16] ; clock        ; clock       ; 0.000        ; 0.247      ; 0.838      ;
-; 0.507 ; count[23]    ; count[31] ; clock        ; clock       ; 0.000        ; 0.245      ; 0.836      ;
-; 0.507 ; count[0]     ; count[4]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.641      ;
-; 0.508 ; count[2]     ; count[6]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.642      ;
-+-------+--------------+-----------+--------------+-------------+--------------+------------+------------+
++-----------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold: 'clock'                                                                  ;
++-------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node ; To Node   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+; 0.200 ; number[7] ; number[7] ; clock        ; clock       ; 0.000        ; 0.041      ; 0.325      ;
+; 0.279 ; count[1]  ; count[1]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.413      ;
+; 0.279 ; count[3]  ; count[3]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.413      ;
+; 0.281 ; count[2]  ; count[2]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.415      ;
+; 0.281 ; count[4]  ; count[4]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.415      ;
+; 0.290 ; count[5]  ; count[5]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.424      ;
+; 0.291 ; count[0]  ; count[0]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.425      ;
+; 0.291 ; count[6]  ; count[6]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.425      ;
+; 0.298 ; count[31] ; count[31] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.424      ;
+; 0.299 ; count[7]  ; count[7]  ; clock        ; clock       ; 0.000        ; 0.042      ; 0.425      ;
+; 0.299 ; count[27] ; count[27] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.425      ;
+; 0.299 ; count[17] ; count[17] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.425      ;
+; 0.299 ; count[19] ; count[19] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.425      ;
+; 0.299 ; count[21] ; count[21] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.425      ;
+; 0.299 ; count[29] ; count[29] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.425      ;
+; 0.300 ; number[2] ; number[2] ; clock        ; clock       ; 0.000        ; 0.041      ; 0.425      ;
+; 0.300 ; count[8]  ; count[8]  ; clock        ; clock       ; 0.000        ; 0.042      ; 0.426      ;
+; 0.300 ; count[22] ; count[22] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.426      ;
+; 0.300 ; count[23] ; count[23] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.426      ;
+; 0.300 ; count[25] ; count[25] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.426      ;
+; 0.301 ; number[3] ; number[3] ; clock        ; clock       ; 0.000        ; 0.041      ; 0.426      ;
+; 0.301 ; count[10] ; count[10] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.427      ;
+; 0.301 ; count[20] ; count[20] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.427      ;
+; 0.301 ; count[24] ; count[24] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.427      ;
+; 0.301 ; count[30] ; count[30] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.427      ;
+; 0.302 ; count[26] ; count[26] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.428      ;
+; 0.302 ; count[28] ; count[28] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.428      ;
+; 0.311 ; count[16] ; count[16] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.437      ;
+; 0.312 ; count[18] ; count[18] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.438      ;
+; 0.428 ; count[1]  ; count[2]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.562      ;
+; 0.428 ; count[3]  ; count[4]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.562      ;
+; 0.438 ; count[0]  ; count[1]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.572      ;
+; 0.439 ; count[2]  ; count[3]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.573      ;
+; 0.439 ; count[4]  ; count[5]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.573      ;
+; 0.439 ; count[5]  ; count[6]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.573      ;
+; 0.441 ; count[0]  ; count[2]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.575      ;
+; 0.442 ; count[2]  ; count[4]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.576      ;
+; 0.442 ; count[4]  ; count[6]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.576      ;
+; 0.448 ; count[7]  ; count[8]  ; clock        ; clock       ; 0.000        ; 0.042      ; 0.574      ;
+; 0.448 ; count[21] ; count[22] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.574      ;
+; 0.448 ; count[19] ; count[20] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.574      ;
+; 0.448 ; count[29] ; count[30] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.574      ;
+; 0.448 ; count[27] ; count[28] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.574      ;
+; 0.448 ; count[17] ; count[18] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.574      ;
+; 0.449 ; number[2] ; number[3] ; clock        ; clock       ; 0.000        ; 0.041      ; 0.574      ;
+; 0.449 ; count[23] ; count[24] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.575      ;
+; 0.449 ; count[25] ; count[26] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.575      ;
+; 0.451 ; number[1] ; number[1] ; clock        ; clock       ; 0.000        ; 0.041      ; 0.576      ;
+; 0.458 ; count[22] ; count[23] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.584      ;
+; 0.459 ; number[3] ; number[4] ; clock        ; clock       ; 0.000        ; 0.041      ; 0.584      ;
+; 0.459 ; count[30] ; count[31] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.585      ;
+; 0.459 ; count[20] ; count[21] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.585      ;
+; 0.459 ; count[24] ; count[25] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.585      ;
+; 0.460 ; count[26] ; count[27] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.586      ;
+; 0.460 ; count[28] ; count[29] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.586      ;
+; 0.461 ; count[8]  ; count[10] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.587      ;
+; 0.461 ; count[22] ; count[24] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.587      ;
+; 0.462 ; number[3] ; number[5] ; clock        ; clock       ; 0.000        ; 0.041      ; 0.587      ;
+; 0.462 ; count[20] ; count[22] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.588      ;
+; 0.462 ; count[24] ; count[26] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.588      ;
+; 0.463 ; count[28] ; count[30] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.589      ;
+; 0.463 ; count[26] ; count[28] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.589      ;
+; 0.464 ; number[0] ; number[0] ; clock        ; clock       ; 0.000        ; 0.041      ; 0.589      ;
+; 0.465 ; number[5] ; number[5] ; clock        ; clock       ; 0.000        ; 0.041      ; 0.590      ;
+; 0.469 ; count[16] ; count[17] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.595      ;
+; 0.470 ; count[18] ; count[19] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.596      ;
+; 0.472 ; count[16] ; count[18] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.598      ;
+; 0.473 ; count[18] ; count[20] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.599      ;
+; 0.491 ; count[1]  ; count[3]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.625      ;
+; 0.491 ; count[3]  ; count[5]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.625      ;
+; 0.494 ; count[1]  ; count[4]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.628      ;
+; 0.494 ; count[3]  ; count[6]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.628      ;
+; 0.504 ; count[0]  ; count[3]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.638      ;
+; 0.505 ; count[2]  ; count[5]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.639      ;
+; 0.507 ; count[0]  ; count[4]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.641      ;
+; 0.508 ; count[2]  ; count[6]  ; clock        ; clock       ; 0.000        ; 0.050      ; 0.642      ;
+; 0.511 ; count[21] ; count[23] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.637      ;
+; 0.511 ; count[29] ; count[31] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.637      ;
+; 0.511 ; count[19] ; count[21] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.637      ;
+; 0.511 ; count[27] ; count[29] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.637      ;
+; 0.511 ; count[17] ; count[19] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.637      ;
+; 0.512 ; number[2] ; number[4] ; clock        ; clock       ; 0.000        ; 0.041      ; 0.637      ;
+; 0.512 ; count[23] ; count[25] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.638      ;
+; 0.512 ; count[25] ; count[27] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.638      ;
+; 0.514 ; count[7]  ; count[10] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.640      ;
+; 0.514 ; count[21] ; count[24] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.640      ;
+; 0.514 ; count[19] ; count[22] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.640      ;
+; 0.514 ; count[27] ; count[30] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.640      ;
+; 0.514 ; count[17] ; count[20] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.640      ;
+; 0.515 ; number[2] ; number[5] ; clock        ; clock       ; 0.000        ; 0.041      ; 0.640      ;
+; 0.515 ; count[23] ; count[26] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.641      ;
+; 0.515 ; count[25] ; count[28] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.641      ;
+; 0.524 ; count[22] ; count[25] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.650      ;
+; 0.525 ; number[3] ; number[6] ; clock        ; clock       ; 0.000        ; 0.041      ; 0.650      ;
+; 0.525 ; count[20] ; count[23] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.651      ;
+; 0.525 ; count[24] ; count[27] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.651      ;
+; 0.526 ; count[28] ; count[31] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.652      ;
+; 0.526 ; count[26] ; count[29] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.652      ;
+; 0.527 ; count[22] ; count[26] ; clock        ; clock       ; 0.000        ; 0.042      ; 0.653      ;
+; 0.528 ; number[3] ; number[7] ; clock        ; clock       ; 0.000        ; 0.041      ; 0.653      ;
++-------+-----------+-----------+--------------+-------------+--------------+------------+------------+
 
 
 ----------------------------------------------
@@ -930,10 +930,10 @@ No synchronizer chains to report.
 +------------------+----------+-------+----------+---------+---------------------+
 ; Clock            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+----------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -3.667   ; 0.241 ; N/A      ; N/A     ; -3.000              ;
-;  clock           ; -3.667   ; 0.241 ; N/A      ; N/A     ; -3.000              ;
-; Design-wide TNS  ; -132.35  ; 0.0   ; 0.0      ; 0.0     ; -56.97              ;
-;  clock           ; -132.350 ; 0.000 ; N/A      ; N/A     ; -56.970             ;
+; Worst-case Slack ; -3.611   ; 0.200 ; N/A      ; N/A     ; -3.000              ;
+;  clock           ; -3.611   ; 0.200 ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS  ; -131.044 ; 0.0   ; 0.0      ; 0.0     ; -56.97              ;
+;  clock           ; -131.044 ; 0.000 ; N/A      ; N/A     ; -56.970             ;
 +------------------+----------+-------+----------+---------+---------------------+
 
 
@@ -987,11 +987,11 @@ No synchronizer chains to report.
 +-------------------------+--------------+-----------------+-----------------+
 ; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
 +-------------------------+--------------+-----------------+-----------------+
+; velocity                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; clock                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; forward                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; reset                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; enable                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; velocity                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; select1                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; select2                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -1175,9 +1175,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 6     ; 6    ;
-; Unconstrained Input Port Paths  ; 102   ; 102  ;
-; Unconstrained Output Ports      ; 19    ; 19   ;
-; Unconstrained Output Port Paths ; 66    ; 66   ;
+; Unconstrained Input Port Paths  ; 108   ; 108  ;
+; Unconstrained Output Ports      ; 25    ; 25   ;
+; Unconstrained Output Port Paths ; 72    ; 72   ;
 +---------------------------------+-------+------+
 
 
@@ -1228,6 +1228,12 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; display_right[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display_right[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display_right[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display_velocity1[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display_velocity1[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display_velocity1[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display_velocity2[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display_velocity2[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display_velocity2[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +----------------------+---------------------------------------------------------------------------------------+
 
 
@@ -1269,6 +1275,12 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; display_right[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display_right[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display_right[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display_velocity1[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display_velocity1[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display_velocity1[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display_velocity2[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display_velocity2[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display_velocity2[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +----------------------+---------------------------------------------------------------------------------------+
 
 
@@ -1278,7 +1290,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Aug 15 13:55:45 2018
+    Info: Processing started: Fri Aug 17 21:17:42 2018
 Info: Command: quartus_sta Lab1 -c Lab1
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1295,14 +1307,14 @@ Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.667
+Info (332146): Worst-case setup slack is -3.611
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.667            -132.350 clock 
-Info (332146): Worst-case hold slack is 0.539
+    Info (332119):    -3.611            -131.044 clock 
+Info (332146): Worst-case hold slack is 0.442
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.539               0.000 clock 
+    Info (332119):     0.442               0.000 clock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -1315,14 +1327,14 @@ Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.265
+Info (332146): Worst-case setup slack is -3.214
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.265            -117.210 clock 
-Info (332146): Worst-case hold slack is 0.486
+    Info (332119):    -3.214            -116.569 clock 
+Info (332146): Worst-case hold slack is 0.400
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.486               0.000 clock 
+    Info (332119):     0.400               0.000 clock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -1333,26 +1345,26 @@ Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -1.199
+Info (332146): Worst-case setup slack is -1.188
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.199             -41.528 clock 
-Info (332146): Worst-case hold slack is 0.241
+    Info (332119):    -1.188             -41.284 clock 
+Info (332146): Worst-case hold slack is 0.200
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.241               0.000 clock 
+    Info (332119):     0.200               0.000 clock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000             -48.138 clock 
+    Info (332119):    -3.000             -47.733 clock 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4839 megabytes
-    Info: Processing ended: Wed Aug 15 13:55:57 2018
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 4842 megabytes
+    Info: Processing ended: Fri Aug 17 21:17:57 2018
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:04
 
 

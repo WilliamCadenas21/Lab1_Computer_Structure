@@ -139,7 +139,7 @@ end process;
 			end case;
 
 		case clocktimer is
-			when 25000000 =>  display_velocity2 <= "0010010"; 
+			when 12500000 =>  display_velocity2 <= "0010010"; 
 									display_velocity1 <= "0000001"; --2.0hz
 			when others => display_velocity2 <= "0000001";
 								display_velocity1 <= "0100100"; -- 0.5hz

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab1
-Wed Aug 15 13:54:09 2018
+Fri Aug 17 21:15:46 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Aug 15 13:54:08 2018       ;
+; Analysis & Synthesis Status        ; Successful - Fri Aug 17 21:15:46 2018       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Lab1                                        ;
 ; Top-level Entity Name              ; lab1                                        ;
@@ -200,8 +200,8 @@ refer to the applicable agreement for further details.
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
 ; Maximum fan-out                             ; 42          ;
-; Total fan-out                               ; 458         ;
-; Average fan-out                             ; 2.21        ;
+; Total fan-out                               ; 464         ;
+; Average fan-out                             ; 2.24        ;
 +---------------------------------------------+-------------+
 
 
@@ -261,19 +261,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;     ENA               ; 2                           ;
 ;     ENA CLR           ; 8                           ;
 ;     ENA SCLR          ; 32                          ;
-; cycloneiii_lcell_comb ; 86                          ;
+; cycloneiii_lcell_comb ; 87                          ;
 ;     arith             ; 39                          ;
 ;         2 data inputs ; 32                          ;
 ;         3 data inputs ; 7                           ;
-;     normal            ; 47                          ;
+;     normal            ; 48                          ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 5                           ;
+;         1 data inputs ; 6                           ;
 ;         2 data inputs ; 7                           ;
 ;         3 data inputs ; 2                           ;
 ;         4 data inputs ; 31                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.21                        ;
+; Average LUT depth     ; 3.20                        ;
 +-----------------------+-----------------------------+
 
 
@@ -282,7 +282,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:07     ;
+; Top            ; 00:00:08     ;
 +----------------+--------------+
 
 
@@ -292,7 +292,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Aug 15 13:53:14 2018
+    Info: Processing started: Fri Aug 17 21:14:46 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab1 -c Lab1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -305,18 +305,12 @@ Warning (10492): VHDL Process Statement warning at Lab1.vhd(122): signal "l1" is
 Warning (10492): VHDL Process Statement warning at Lab1.vhd(141): signal "clockTimer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 141
 Warning (10492): VHDL Process Statement warning at Lab1.vhd(148): signal "increment" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 148
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "display_velocity1[6]" is stuck at GND File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 26
     Warning (13410): Pin "display_velocity1[5]" is stuck at GND File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 26
-    Warning (13410): Pin "display_velocity1[4]" is stuck at VCC File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 26
     Warning (13410): Pin "display_velocity1[3]" is stuck at GND File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 26
     Warning (13410): Pin "display_velocity1[2]" is stuck at GND File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 26
-    Warning (13410): Pin "display_velocity1[1]" is stuck at VCC File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 26
     Warning (13410): Pin "display_velocity1[0]" is stuck at GND File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 26
-    Warning (13410): Pin "display_velocity2[6]" is stuck at VCC File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 27
-    Warning (13410): Pin "display_velocity2[5]" is stuck at GND File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 27
     Warning (13410): Pin "display_velocity2[4]" is stuck at GND File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 27
     Warning (13410): Pin "display_velocity2[3]" is stuck at GND File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 27
-    Warning (13410): Pin "display_velocity2[2]" is stuck at GND File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 27
     Warning (13410): Pin "display_velocity2[1]" is stuck at GND File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 27
     Warning (13410): Pin "display_velocity2[0]" is stuck at GND File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 27
     Warning (13410): Pin "display_increment[5]" is stuck at VCC File: C:/Users/WILL/Documents/Lab1_Computer_Structure/Lab1/Lab1.vhd Line: 30
@@ -328,10 +322,10 @@ Info (21057): Implemented 124 device resources after synthesis - the final resou
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 35 output pins
     Info (21061): Implemented 82 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 22 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
     Info: Peak virtual memory: 4822 megabytes
-    Info: Processing ended: Wed Aug 15 13:54:09 2018
-    Info: Elapsed time: 00:00:55
-    Info: Total CPU time (on all processors): 00:00:43
+    Info: Processing ended: Fri Aug 17 21:15:47 2018
+    Info: Elapsed time: 00:01:01
+    Info: Total CPU time (on all processors): 00:00:45
 
 
